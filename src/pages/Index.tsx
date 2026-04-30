@@ -6,8 +6,8 @@ import { CtaSection } from "@/components/CtaSection";
 const Index = () => (
   <>
     <Hero />
-    <ValuesSection />
     <AboutPreview />
+    <ValuesSection />
     <CtaSection />
   </>
 );

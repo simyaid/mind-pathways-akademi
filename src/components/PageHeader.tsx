@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 interface PageHeaderProps {
   eyebrow: string;
   title: ReactNode;
-  description?: string;
+  description?: ReactNode;
 }
 
 export const PageHeader = ({ eyebrow, title, description }: PageHeaderProps) => (
@@ -21,7 +21,7 @@ export const PageHeader = ({ eyebrow, title, description }: PageHeaderProps) => 
           {title}
         </h1>
         {description && (
-          <p className="mt-7 text-lg leading-relaxed text-muted-foreground max-w-2xl">{description}</p>
+          <div className="mt-7 text-lg leading-relaxed text-muted-foreground max-w-2xl space-y-4">{description}</div>
         )}
       </motion.div>
     </div>

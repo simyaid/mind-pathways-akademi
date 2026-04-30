@@ -7,19 +7,15 @@ export const AboutPreview = () => (
       <div className="lg:col-span-5">
         <span className="eyebrow mb-5">Hakkımızda</span>
         <h2 className="font-display text-3xl lg:text-[2.4rem] leading-tight font-medium text-navy-deep mt-4">
-          Bir okul değil, bir düşünme zemini.
+          Ruhsallık alanında yeni bir anlayışın temsilcisi
         </h2>
       </div>
       <div className="lg:col-span-7 space-y-6 text-[1.02rem] leading-relaxed text-muted-foreground">
         <p>
-          Akademi Psikodiyalektik, psikolojiyi yalnızca bir uygulama alanı olarak değil; felsefi sorgulamayla
-          beslenen, etik bir <em className="text-navy-deep not-italic font-medium">tutum</em> olarak ele alır.
-          Programlarımız, klasik psikoloji ekollerini çağdaş düşünce pratikleriyle yan yana getirir.
+          Akademi Psikodiyalektik; insanlığın tarihiyle ve insanın evrensel hakikatiyle uyarlı bir ruhsallık bilgisinin geliştirilmesi ve bu bilginin uygulama alanlarının ve kültürünün oluşturulması için kurulmuştur.
         </p>
         <p>
-          Burada bilgi, ezberlenen bir içerik değil; üzerinde durulan, sınanan ve yeniden inşa edilen bir
-          süreçtir. Eğitim modüllerimiz; teori, vaka çalışması ve diyalektik tartışma olmak üzere üç katmanlı
-          biçimde yapılandırılmıştır.
+          1990'ların ikinci yarısında Bakırköy Ruh ve Sinir Hastalıkları Hastanesi'nde çıkan aura dergisinden başlayan ve Akıl Defteri dergisi ve sonrasında Psikodiyalektik Araştırmalar Derneği ile devam eden arayışın geldiği aşamadır.
         </p>
         <Link
           to="/hakkimizda"

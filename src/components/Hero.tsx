@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-illustration.png";
+import heroImg from "@/assets/i1.png";
 
 export const Hero = () => {
   return (
@@ -17,39 +17,39 @@ export const Hero = () => {
         }}
       />
 
-      <div className="container-tight relative grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-12 items-center pt-12 pb-20 lg:pt-20 lg:pb-28">
+      <div className="container-tight relative grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-12 items-center pt-6 pb-20 lg:pt-6 lg:pb-28 mt-5">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="self-end mt-[180px]"
         >
-          <span className="eyebrow mb-7">Psikoloji · Felsefe · Formasyon</span>
-
-          <h1 className="font-display text-[2.5rem] sm:text-5xl lg:text-[3.75rem] leading-[1.05] font-medium text-navy-deep tracking-tight">
-            Ruhsallık,{" "}
-            <span className="italic text-navy-700">öğrenilen</span>{" "}
-            değil{" "}
-            <span className="relative whitespace-nowrap">
-              <span className="relative z-10">deneyimlenen</span>
-              <span className="absolute left-0 right-0 bottom-1 h-3 bg-amber/40 -z-0" />
-            </span>{" "}
-            bir süreçtir.
+          <div>
+<h1 className="font-display text-[1.875rem] sm:text-[2.25rem] lg:text-[38pt] leading-[1.05] font-medium text-navy-deep tracking-tight">
+            Uzun Bir{" "}
+            <span className="italic text-navy-500">Arayışın</span>
+            <br />
+            <span className="whitespace-nowrap">
+              Bugünkü{" "}
+              <span className="underline decoration-amber decoration-2 underline-offset-4">Karşılığı</span>
+            </span>
           </h1>
 
-          <p className="mt-7 max-w-xl text-base lg:text-[1.05rem] leading-relaxed text-muted-foreground">
-            Akademi Psikodiyalektik; psikoloji, felsefe ve etik üzerine yapılandırılmış formasyon programlarıyla
-            düşünme pratiğini bir disipline dönüştürür. Burada cevaplar değil, daha iyi sorular aranır.
+          <div className="mt-6 mb-6 w-12 h-[2px] bg-amber" />
+
+          <p className="max-w-xl text-base lg:text-[1.05rem] leading-relaxed text-muted-foreground">
+            Akademi Psikodiyalektik insanlığın tarihiyle ve evrensel<br />hakikatiyle uyarlı bir ruhsallık bilgisinin geliştirilmesi için kurulmuştur.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Button asChild variant="amber" size="lg">
               <Link to="/formasyon">
-                Formasyona Başla <ArrowRight className="ml-1" />
+                Kaydol <ArrowRight className="ml-1" />
               </Link>
             </Button>
             <Button asChild variant="navyOutline" size="lg">
               <Link to="/hakkimizda">
-                <BookOpen /> Yaklaşımımız
+                <BookOpen /> Hakkımızda
               </Link>
             </Button>
           </div>
@@ -60,21 +60,22 @@ export const Hero = () => {
               <dd className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Eğitmen</dd>
             </div>
             <div>
-              <dt className="text-2xl font-display font-semibold text-navy-deep">800+</dt>
-              <dd className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Mezun</dd>
+              <dt className="text-2xl font-display font-semibold text-navy-deep">700</dt>
+              <dd className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Saat</dd>
             </div>
             <div>
-              <dt className="text-2xl font-display font-semibold text-navy-deep">9</dt>
+              <dt className="text-2xl font-display font-semibold text-navy-deep">4</dt>
               <dd className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Modül</dd>
             </div>
           </dl>
+          </div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="relative"
+          className="relative self-start"
         >
           <div className="absolute -inset-6 bg-surface rounded-2xl -z-10" />
           <img
@@ -82,13 +83,8 @@ export const Hero = () => {
             alt="Düşünce ve diyalog ilişkisini gösteren editöryal illüstrasyon"
             width={1024}
             height={1024}
-            className="w-full h-auto"
+            className="w-full h-auto scale-150 origin-top"
           />
-          {/* Quote badge */}
-          <div className="absolute -bottom-4 -left-4 lg:bottom-8 lg:-left-8 bg-navy-deep text-primary-foreground px-5 py-4 rounded-md shadow-card max-w-[260px]">
-            <p className="font-display italic text-sm leading-snug">"Sorgulanmamış bir hayat, yaşanmaya değmez."</p>
-            <p className="mt-2 text-[0.65rem] uppercase tracking-[0.2em] text-amber">— Sokrates</p>
-          </div>
         </motion.div>
       </div>
     </section>

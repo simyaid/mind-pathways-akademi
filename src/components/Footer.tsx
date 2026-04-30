@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
+import akademiLogo from "@/assets/Akademi Logo .png";
 
 export const Footer = () => (
   <footer className="mt-32 border-t border-border bg-surface">
     <div className="container-tight py-16">
       <div className="grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2 max-w-sm">
-          <div className="flex items-center gap-2.5 mb-4">
-            <span className="grid h-9 w-9 place-items-center rounded-md bg-navy-deep text-amber font-display font-bold">Ψ</span>
-            <span className="font-display font-semibold text-navy-deep">Akademi Psikodiyalektik</span>
+          <div className="mb-4">
+            <img src={akademiLogo} alt="Akademi Psikodiyalektik" className="h-12 w-auto object-contain" />
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground">
             Psikoloji ve felsefenin kesişiminde, deneyim üzerinden inşa edilen yapılandırılmış bir zihinsel gelişim akademisi.

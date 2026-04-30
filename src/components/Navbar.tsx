@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import akademiLogo from "@/assets/Akademi Logo .png";
 
 const navItems = [
   { to: "/", label: "Ana Sayfa" },
@@ -36,42 +37,39 @@ export const Navbar = () => {
       )}
     >
       <div className="container-tight flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-navy-deep text-amber font-display font-bold">Ψ</span>
-          <span className="flex flex-col leading-tight">
-            <span className="font-display text-[0.95rem] font-semibold text-navy-deep">Akademi</span>
-            <span className="text-[0.7rem] uppercase tracking-[0.18em] text-navy-500">Psikodiyalektik</span>
-          </span>
+        <Link to="/" className="flex items-center group">
+          <img src={akademiLogo} alt="Akademi Psikodiyalektik" className="h-12 w-auto object-contain" />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              end={item.to === "/"}
-              className={({ isActive }) =>
-                cn(
-                  "relative px-4 py-2 text-sm font-medium transition-colors",
-                  isActive ? "text-navy-deep" : "text-muted-foreground hover:text-navy-deep"
-                )
-              }
-            >
-              {({ isActive }) => (
-                <>
-                  {item.label}
-                  {isActive && (
-                    <span className="absolute left-4 right-4 -bottom-0.5 h-px bg-amber" />
-                  )}
-                </>
-              )}
-            </NavLink>
-          ))}
-        </nav>
+        <div className="flex items-center gap-4">
+          <nav className="hidden lg:flex items-center gap-1">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.to === "/"}
+                className={({ isActive }) =>
+                  cn(
+                    "relative px-4 py-2 text-sm font-medium transition-colors",
+                    isActive ? "text-navy-deep" : "text-muted-foreground hover:text-navy-deep"
+                  )
+                }
+              >
+                {({ isActive }) => (
+                  <>
+                    {item.label}
+                    {isActive && (
+                      <span className="absolute left-4 right-4 -bottom-0.5 h-px bg-amber" />
+                    )}
+                  </>
+                )}
+              </NavLink>
+            ))}
+          </nav>
 
-        <div className="hidden lg:flex items-center gap-2">
-          <Button variant="ghost" size="sm" className="text-navy-deep">Üye Girişi</Button>
-          <Button variant="amber" size="sm">Kayıt Ol</Button>
+          <div className="hidden lg:flex items-center gap-2">
+            <Button variant="amber" size="sm">Üye Girişi</Button>
+          </div>
         </div>
 
         <button
@@ -102,8 +100,7 @@ export const Navbar = () => {
               </NavLink>
             ))}
             <div className="flex gap-2 pt-3 mt-2 border-t border-border">
-              <Button variant="navyOutline" size="sm" className="flex-1">Üye Girişi</Button>
-              <Button variant="amber" size="sm" className="flex-1">Kayıt Ol</Button>
+              <Button variant="amber" size="sm" className="flex-1">Üye Girişi</Button>
             </div>
           </div>
         </div>

@@ -4,31 +4,33 @@ const About = () => (
   <>
     <PageHeader
       eyebrow="Hakkımızda"
-      title={<>Bir disiplinin değil, <em className="italic font-normal">bir tutumun</em> akademisi.</>}
-      description="Akademi Psikodiyalektik, psikoloji ve felsefenin kesişiminde, etik bir formasyon anlayışıyla kurulmuştur. Cevap üretmekten çok soru üretmeyi önemser."
+      title={<>Bir arayışın vardığı değil,<br /><span className="underline decoration-amber decoration-2 underline-offset-4 font-bold">devam ettiği</span> yer.</>}
+      description={<>
+        <p>Akademi Psikodiyalektik; insanlığın tarihiyle ve insanın evrensel hakikatiyle uyarlı bir ruhsallık bilgisinin geliştirilmesi ve bu bilginin uygulama alanlarının ve kültürünün oluşturulması için kurulmuştur.</p>
+        <p>1990’ların ikinci yarısında Bakırköy Ruh ve Sinir Hastalıkları Hastanesi’nde çıkan aura dergisinden başlayan ve Akıl Defteri dergisi ve sonrasında Psikodiyalektik Araştırmalar Derneği ile devam eden arayışın geldiği aşamadır.</p>
+      </>}
     />
 
     <section className="py-20 lg:py-28">
       <div className="container-tight grid gap-16 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">
-            <span className="text-xs uppercase tracking-[0.2em] text-navy-500">Misyon</span>
-            <h2 className="font-display text-2xl lg:text-3xl text-navy-deep mt-4 leading-tight">
-              Düşünmeyi yöntem, etiği zemin haline getirmek.
+            <h2 className="font-display text-2xl lg:text-3xl text-navy-deep leading-tight">
+              Bilgi değil, kültür üretir.
             </h2>
           </div>
         </div>
         <div className="lg:col-span-8 space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
-            Misyonumuz; psikoloji eğitimini, felsefi sorgulamadan ve etik sorumluluktan koparmadan,
-            uygulanabilir ve düşünülebilir bir bütün olarak inşa etmektir. Akademi olarak, bir mesleki
-            sertifika kurumu değil; bir <span className="text-navy-deep font-medium">düşünme okulu</span>
-            olduğumuza inanırız.
+          Akademi Psikodiyalektik; psikodiyalektik bilginin üretiminin ve ruh sağlığı alanında temel bir anlayış olarak gelişiminin adresidir, 
+          bu yönde araştırma ve incelemeler yapar, ruhsal çalışmaların nitelikli ve eşitlikçi bir biçimde topluma 
+          ulaştırılmasının koşullarını yaratır ve psikodiyalektik çalışmacı adaylarının formasyon sürecinin sorumluluğunu 
+          üstlenir. 
+
           </p>
           <p>
-            Programlarımız, çağdaş klinik yaklaşımları kıta felsefesi geleneğiyle, vaka çalışmalarını
-            diyalektik yöntemle birleştirir. Katılımcılarımız sürecin sonunda yalnızca bilgi değil; bir
-            tavır, bir tutum ve bir dil edinirler.
+          Psikodiyalektik bir kültürün oluşturulması için yazılı ve görsel kültür ürünleri üretir, yayınlar ve 
+          yaygınlaştırılması için olanaklar yaratır.
           </p>
         </div>
       </div>
@@ -37,21 +39,18 @@ const About = () => (
     <section className="py-20 lg:py-28 bg-surface border-y border-border">
       <div className="container-tight grid gap-16 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <span className="text-xs uppercase tracking-[0.2em] text-navy-500">Hikâyemiz</span>
-          <h2 className="font-display text-2xl lg:text-3xl text-navy-deep mt-4 leading-tight">
+          <h2 className="font-display text-2xl lg:text-3xl text-navy-deep leading-tight">
             Akademik bir boşluğu doldurmak üzere kuruldu.
           </h2>
         </div>
         <div className="lg:col-span-8 space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
-            Akademi Psikodiyalektik; klinik psikoloji, felsefe ve eğitim bilimleri alanlarından bir araya
-            gelen akademisyenler tarafından, alanında derinlikli ama uygulamadan kopmamış bir formasyon
-            programı sunmak amacıyla kuruldu.
+          Bu çalışmaları  HALK İÇİN PSİKOTERAPİ DERNEĞİ ile emek birliği içinde ve karşılıklı sorumluluk bilinciyle gerçekleştirir. 
+
           </p>
           <p>
-            İlk dönem programlarımızdan bu yana 800'ü aşkın katılımcıya ulaştık. Bugün; eğitmen kadromuz,
-            danışma kurulumuz ve mezunlarımızla birlikte, alanın saygın bir entelektüel zemini olmayı
-            sürdürüyoruz.
+          HALK İÇİN PSİKOTERAPİ DERNEĞİ’nin temsil ettiği değerlerin ve ilkelerin en somut örneklerinden biri olan psikodiyalektik formasyon süreci ve psikodiyalektik kültür üretimi çabası ile AKADEMİ PSİKODİYALEKTİK ruhsallık alanında yeni bir anlayışın temsilcisidir.
+
           </p>
           <blockquote className="border-l-2 border-amber pl-6 py-2 mt-10 font-display italic text-xl text-navy-deep leading-snug">
             "Bir formasyon süreci, kişiyi sadece donatmaz; onu yeniden biçimlendirir."
