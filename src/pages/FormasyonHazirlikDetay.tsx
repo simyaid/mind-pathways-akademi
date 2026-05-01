@@ -27,6 +27,9 @@ type Kurs = {
   katilimKosullari?: ReactNode;
   dersler?: Ders[];
   icerikBaslik?: string;
+  modulIcerikBaslik?: string;
+  not?: string;
+  not2?: string;
 };
 
 const kurslar: Record<string, Kurs> = {
@@ -39,13 +42,17 @@ const kurslar: Record<string, Kurs> = {
       <p>Formasyondaki adaylar, formasyonun ikinci yıl ile birlikte Formasyonda Psikodiyalektik Çalışmacı olarak adlandırılırlar ve psikodiyalektik çalışma için başvuruları kabul ederler.</p>
     </>,
     icerik: [
-      { baslik: "İleri Teorik Çalışmalar", metin: "Ruhsallık, felsefe ve psikoloji arasındaki tarihsel ilişki; psikodiyalektik yaklaşımın doğuşu ve temel varsayımları." },
-      { baslik: "Psikodiyalektik Çalışma Temrinleri", metin: "Empirik, spekülatif ve deneyimsel bilgi arasındaki farklar; ruhsallık çalışmasında hangi bilgi türlerinin nasıl kullanıldığı." },
-      { baslik: "Olgu ve Süpervizyon Çalışmaları", metin: "Türkiye ve Ortadoğu'nun kültürel ve tarihsel dinamiklerinin psikodiyalektik çalışmayla buluşturulması." },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Adayın formasyon yolculuğuna girmeden önce kendi motivasyonunu, beklentilerini ve hazırbulunuşluğunu değerlendirmesi." },
+      { baslik: "İleri Teorik Çalışmalar", metin: "" },
+      { baslik: "Psikodiyalektik Çalışma Temrinleri", metin: "" },
+      { baslik: "Olgu ve Süpervizyon Çalışmaları", metin: "" },
+      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "" },
     ],
     sure: "Hazırlık dönemi",
     kimler: "Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır. ",
+    icerikBaslik: "",
+    modulIcerikBaslik: "Formasyon İçeriği",
+    not: "En az bir yıl psikodiyalektik çalışmacı olarak Psikodiyalektik çalışma süreci yürüten aday, özgün bir metin yazımı ve bir psikodiyalektik kültür çalışması yaptıktan sonra Psikodiyalektik Çalışmacı ünvanı alır ve belgesi Akademi Psikodiyalektik değerlendirmesi sonrası Halk İçin Psikoterapi Derneği ile ortak düzenlenir.",
+    not2: "Adaylar, formasyonun ikinci yılı ile birlikte HALK İÇİN PSİKOTERAPİ DERNEĞİ'ne üye olurlar ve Halk İçin Psikoterapi Derneği tüzüğünün üyeler için belirlediği sorumluluğu yerine getirmekle yükümlüdürler.",
     katilimKosullari: (
       <ul className="space-y-3">
         <li className="flex items-center gap-3">
@@ -270,6 +277,7 @@ const kurslar: Record<string, Kurs> = {
     sure: "1 Yıl",
     kimler: "1. Modülü tamamlamış ve psikodiyalektik teoriye hâkim olan katılımcılar için tasarlanmıştır.",
     alinti: "\"Bilmek başlangıçtır; uygulamak ise dönüşümün kendisidir.\"",
+    icerikBaslik: "Kurslar",
   },
   "3-modul": {
     modul: "3. Modül",
@@ -395,11 +403,22 @@ const KursDetay = () => {
 
             <div className="space-y-6">
               <div className="space-y-2">
-                <h2 className="font-display text-[24px] text-navy-deep">Modül İçeriği</h2>
-                <h3 className="font-display text-[21px] text-navy-deep">{kurs.icerikBaslik || "Kurslar"}</h3>
+                <h2 className="font-display text-[24px] text-navy-deep">{kurs.modulIcerikBaslik || "Modül İçeriği"}</h2>
+                {kurs.icerikBaslik !== "" && (
+                  <h3 className="font-display text-[21px] text-navy-deep">{kurs.icerikBaslik || "Kurslar"}</h3>
+                )}
               </div>
               <Accordion type="multiple">
-                {kurs.icerik.map((item, i) => (
+                {kurs.icerik.map((item, i) => {
+                  const hasContent = item.metin || item.egitmen || item.tarih || item.tur || item.konular;
+                  if (!hasContent) {
+                    return (
+                      <div key={i} className="border-l-2 border-amber pl-6 py-4">
+                        <span className="font-display font-semibold text-[21px] text-navy-deep">{item.baslik}</span>
+                      </div>
+                    );
+                  }
+                  return (
                   <AccordionItem key={i} value={`item-${i}`} className="border-l-2 border-amber pl-6 border-b-0">
                     <AccordionTrigger className="font-display font-semibold text-[21px] text-navy-deep hover:no-underline items-start text-left [&>svg]:h-5 [&>svg]:w-5 [&>svg]:stroke-[2.5] [&>svg]:mt-1">
                       {item.baslik}
@@ -441,7 +460,8 @@ const KursDetay = () => {
                       )}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                  );
+                })}
               </Accordion>
             </div>
 
@@ -498,6 +518,20 @@ const KursDetay = () => {
                 <div className="text-[16px] leading-relaxed text-muted-foreground">
                   {kurs.katilimKosullari}
                 </div>
+              </div>
+            )}
+
+            {kurs.not && (
+              <div className="rounded-lg border border-navy-300/40 bg-navy-deep/5 px-6 py-5 flex gap-4 items-start">
+                <Info className="h-5 w-5 text-navy-500 flex-shrink-0 mt-0.5" />
+                <p className="text-sm leading-relaxed text-muted-foreground">{kurs.not}</p>
+              </div>
+            )}
+
+            {kurs.not2 && (
+              <div className="rounded-lg border border-navy-300/40 bg-navy-deep/5 px-6 py-5 flex gap-4 items-start">
+                <Info className="h-5 w-5 text-navy-500 flex-shrink-0 mt-0.5" />
+                <p className="text-sm leading-relaxed text-muted-foreground">{kurs.not2}</p>
               </div>
             )}
 
