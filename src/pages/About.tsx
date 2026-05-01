@@ -15,7 +15,7 @@ const About = () => (
     <section className="py-20 lg:py-28">
       <div className="container-tight grid gap-16 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-4 flex justify-center lg:justify-start">
-            <img src={akademiLogo} alt="Akademi Psikodiyalektik" className="h-32 w-auto object-contain ml-[25px] pl-[20px]" />
+            <img src={akademiLogo} alt="Akademi Psikodiyalektik" className="h-24 w-auto object-contain ml-[25px] pl-[20px]" />
         </div>
         <div className="lg:col-span-8 space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
@@ -34,9 +34,9 @@ const About = () => (
     </section>
 
     <section className="py-20 lg:py-28 bg-surface border-y border-border">
-      <div className="container-tight grid gap-16 lg:grid-cols-12 lg:items-center">
+      <div className="container-tight grid gap-16 lg:grid-cols-12 lg:items-start">
         <div className="lg:col-span-4 flex justify-center lg:justify-start">
-          <img src="/halkicinpsikoterapilogo.png" alt="Halk İçin Psikoterapi" className="h-64 w-auto object-contain" />
+          <img src="/halkicinpsikoterapilogo.png" alt="Halk İçin Psikoterapi" className="h-[165px] w-auto max-w-[165px] object-contain ml-[25px] pl-[20px]" />
         </div>
         <div className="lg:col-span-8 space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
