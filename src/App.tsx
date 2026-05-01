@@ -6,7 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/Layout";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Formation from "./pages/Formation";
+import Formation from "./pages/Kurslar";
+import KursDetay from "./pages/FormasyonHazirlikDetay";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/hakkimizda" element={<About />} />
             <Route path="/formasyon" element={<Formation />} />
+            <Route path="/kurslar/:slug" element={<KursDetay />} />
             <Route path="/kadro" element={<Team />} />
             <Route path="/kadro/:slug" element={<Team />} />
             <Route path="/iletisim" element={<Contact />} />

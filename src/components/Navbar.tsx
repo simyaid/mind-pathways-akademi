@@ -8,8 +8,8 @@ import akademiLogo from "@/assets/Akademi Logo .png";
 const navItems = [
   { to: "/", label: "Ana Sayfa" },
   { to: "/hakkimizda", label: "Hakkımızda" },
-  { to: "/formasyon", label: "Formasyon Süreci" },
-  { to: "/kadro", label: "Kadro" },
+  { to: "/formasyon", label: "Kurslar" },
+  { to: "/kadro", label: "Kadromuz" },
   { to: "/iletisim", label: "İletişim" },
 ];
 

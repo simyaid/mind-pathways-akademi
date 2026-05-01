@@ -44,7 +44,7 @@ export const Hero = () => {
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Button asChild variant="amber" size="lg">
               <Link to="/formasyon">
-                Kaydol <ArrowRight className="ml-1" />
+                Başvurun <ArrowRight className="ml-1" />
               </Link>
             </Button>
             <Button asChild variant="navyOutline" size="lg">
