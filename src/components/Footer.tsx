@@ -1,33 +1,26 @@
 import { Link } from "react-router-dom";
-import akademiLogo from "@/assets/Akademi Logo .png";
+import akademiLogo from "@/assets/AkademiLogo.png";
+import halkicinpsikoterapilogow from "@/assets/halkicinpsikoterapilogow.png";
 
 export const Footer = () => (
   <footer className="mt-32 border-t border-border bg-surface">
-    <div className="container-tight py-16">
-      <div className="grid gap-12 md:grid-cols-4">
+    <div className="container-tight pt-5 pb-5">
+      <div className="grid gap-12 md:grid-cols-4 items-center">
         <div className="md:col-span-2 max-w-sm">
-          <div className="mb-4">
-            <img src={akademiLogo} alt="Akademi Psikodiyalektik" className="h-12 w-auto object-contain" />
+          <div className="mb-4 flex items-center gap-6">
+            <img src={akademiLogo} alt="Akademi Psikodiyalektik" className="h-20 w-auto object-contain" />
+            <div className="w-0.5 h-16 bg-border" />
+            <a href="https://www.halkicinpsikoterapi.org/" target="_blank" rel="noopener noreferrer">
+              <img src={halkicinpsikoterapilogow} alt="Halk İçin Psikoterapi" className="h-48 w-auto object-contain" />
+            </a>
           </div>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            Psikoloji ve felsefenin kesişiminde, deneyim üzerinden inşa edilen yapılandırılmış bir zihinsel gelişim akademisi.
-          </p>
         </div>
-        <div>
-          <h4 className="font-display text-sm font-semibold text-navy-deep mb-4">Akademi</h4>
-          <ul className="space-y-2.5 text-sm text-muted-foreground">
-            <li><Link to="/hakkimizda" className="hover:text-navy-deep">Hakkımızda</Link></li>
-            <li><Link to="/formasyon" className="hover:text-navy-deep">Formasyon</Link></li>
-            <li><Link to="/kadro" className="hover:text-navy-deep">Kadro</Link></li>
-            <li><Link to="/iletisim" className="hover:text-navy-deep">İletişim</Link></li>
-          </ul>
-        </div>
-        <div>
+        <div className="text-right md:col-start-4">
           <h4 className="font-display text-sm font-semibold text-navy-deep mb-4">İletişim</h4>
           <ul className="space-y-2.5 text-sm text-muted-foreground">
-            <li>info@psikodiyalektik.com</li>
-            <li>+90 (212) 000 00 00</li>
-            <li>İstanbul, Türkiye</li>
+            <li>bilgi@halkicinpsikoterapi.com</li>
+            <li>+90 (530) 638 09 23</li>
+            <li>Halaskargazi Caddesi Kutlu Apt. 182/6 Şişli/İstanbul</li>
           </ul>
         </div>
       </div>

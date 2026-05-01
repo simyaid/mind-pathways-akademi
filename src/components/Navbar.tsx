@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import akademiLogo from "@/assets/Akademi Logo .png";
+import akademiLogo from "@/assets/AkademiLogo.png";
 
 const navItems = [
   { to: "/", label: "Ana Sayfa" },
   { to: "/hakkimizda", label: "Hakkımızda" },
-  { to: "/formasyon", label: "Kurslar" },
+  { to: "/formasyon", label: "Formasyon Süreci" },
   { to: "/kadro", label: "Kadromuz" },
   { to: "/iletisim", label: "İletişim" },
 ];

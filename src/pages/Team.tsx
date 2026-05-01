@@ -295,9 +295,14 @@ const Team = () => {
     <>
       <PageHeader
         eyebrow="Kadro"
-        title={<>Bir program değil, <em className="italic font-normal">bir kadro</em> kurar bu okulu.</>}
-        description="Akademi'nin eğitmen kadrosu; klinik psikoloji, felsefe, eğitim bilimleri ve sosyal bilimler alanlarından deneyimli akademisyenlerden oluşur."
-      />
+        title={<>Akademi Psikodiyalektik <br /> Eğitim Kadrosu</>}
+          description={
+    <>
+      Akademi'nin eğitmen kadrosu; klinik psikoloji, felsefe, eğitim bilimleri <br />
+      ve sosyal bilimler alanlarında yetkin isimlerden oluşur.
+    </>
+  }
+/>
 
       <section className="py-20 lg:py-28">
         <div className="container-tight grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

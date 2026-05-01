@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 export const AboutPreview = () => (
-  <section className="py-24 lg:py-32">
+  <section className="py-24 lg:py-32 border-t border-border">
     <div className="container-tight grid gap-14 lg:grid-cols-12 items-start">
       <div className="lg:col-span-5">
         <span className="eyebrow mb-5">Hakkımızda</span>

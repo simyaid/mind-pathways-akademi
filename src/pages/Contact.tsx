@@ -40,7 +40,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted-foreground">E-posta</p>
-                    <p className="mt-1 text-navy-deep font-medium">info@psikodiyalektik.com</p>
+                    <p className="mt-1 text-navy-deep font-medium">bilgi@halkicinpsikoterapi.com</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -49,7 +49,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted-foreground">Telefon</p>
-                    <p className="mt-1 text-navy-deep font-medium">+90 (212) 000 00 00</p>
+                    <p className="mt-1 text-navy-deep font-medium">+90 (530) 638 09 23</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -58,7 +58,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted-foreground">Adres</p>
-                    <p className="mt-1 text-navy-deep font-medium">Beşiktaş, İstanbul</p>
+                    <p className="mt-1 text-navy-deep font-medium">Halaskargazi Caddesi Kutlu Apt. 182/6 Şişli/İstanbul</p>
                   </div>
                 </li>
               </ul>

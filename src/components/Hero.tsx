@@ -60,7 +60,7 @@ export const Hero = () => {
               <dd className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Eğitmen</dd>
             </div>
             <div>
-              <dt className="text-2xl font-display font-semibold text-navy-deep">700</dt>
+              <dt className="text-2xl font-display font-semibold text-navy-deep">700+</dt>
               <dd className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Saat</dd>
             </div>
             <div>
