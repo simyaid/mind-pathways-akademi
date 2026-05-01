@@ -68,7 +68,9 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-2">
-            <Button variant="amber" size="sm">Üye Girişi</Button>
+            <a href="https://akademipsikodiyalektik.vedubox.net/" target="_blank" rel="noopener noreferrer">
+              <Button variant="amber" size="sm" className="py-2.5 px-5 h-auto">Üye Girişi</Button>
+            </a>
           </div>
         </div>
 
