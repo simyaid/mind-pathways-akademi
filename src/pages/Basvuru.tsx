@@ -62,6 +62,18 @@ const Basvuru = () => {
                 <p>Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır.</p>
               </div>
 
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-lg border border-border bg-surface p-5 space-y-1">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500">Program Ücreti</p>
+                  <p className="font-display text-2xl font-semibold text-navy-deep">50.000 TL <span className="text-base font-normal text-muted-foreground">+ KDV</span></p>
+                </div>
+                <div className="rounded-lg border border-border bg-surface p-5 space-y-1">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500">İletişim</p>
+                  <p className="text-sm text-muted-foreground">akademipsikodiyalektik@gmail.com</p>
+                  <p className="text-sm text-muted-foreground">+90 (544) 809 79 09</p>
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="ad">Adınız</Label>
