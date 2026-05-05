@@ -13,7 +13,7 @@ const navItems = [
     to: "/formasyon",
     label: "Psikodiyalektik Formasyon",
     submenu: [
-      { to: "/formasyon", label: "Kurslar" },
+      { to: "/kurslar-listesi", label: "Kurslar" },
       { to: "/dersler", label: "Dersler" },
       { to: "/kurslar/hazirlik", label: "Formasyon Hazırlık" },
       { to: "/kurslar/formasyon-hazirlik", label: "1. Yıl — Psikodiyalektik Teori ve Pratik" },

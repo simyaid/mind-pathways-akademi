@@ -14,6 +14,7 @@ import PsikodiyalektikCalisma from "./pages/PsikodiyalektikCalisma";
 import Basvuru from "./pages/Basvuru";
 import Basvurular from "./pages/Basvurular";
 import Dersler from "./pages/Dersler";
+import KurslarListesi from "./pages/KurslarListesi";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/kadro/:slug" element={<Team />} />
             <Route path="/basvuru" element={<Basvuru />} />
             <Route path="/dersler" element={<Dersler />} />
+            <Route path="/kurslar-listesi" element={<KurslarListesi />} />
             <Route path="/on-basvurular-listesi" element={<Basvurular />} />
             <Route path="/iletisim" element={<Contact />} />
           </Route>

@@ -3,16 +3,6 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const dersler = [
-  { title: "Psikodiyalektik Düşünceye Giriş Kursu", instructor: "Cemal Dindar" },
-  { title: "Psikodiyalektik Çalışma Başlangıç Kursu", instructor: "Cemal Dindar" },
-  { title: "Psikodiyalektik Çalışmanın İlkeleri Kursu", instructor: "Cemal Dindar" },
-  { title: "Psikodiyalektik Formasyon İleri Kursu", instructor: "Cemal Dindar" },
-  { title: "Psikoterapinin Temel İlkeleri Kursu", instructor: "Yunus Emre Aydın" },
-  { title: "Temel Psikoterapi Kursu", instructor: "Cem Atbaşoğlu – E. Timuçin Oral" },
-  { title: "Merkezin Dışındaki Sesler: Psikanalizde Dilsel Hegemonya ve Görmezden Gelinen Öncüler", instructor: "Ahmet S. Kilisli" },
-  { title: "Bağlanma – Travma – Utanç", instructor: "İshak Saygılı" },
-];
 
 const steps = [
   {
@@ -133,22 +123,6 @@ const Formation = () => (
       </div>
     </section>
 
-    <section className="py-20 lg:py-28 border-t border-border">
-      <div className="container-tight max-w-3xl">
-        <div className="mb-12">
-          <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500 mb-3">Dersler</p>
-          <h2 className="font-display text-3xl lg:text-4xl font-semibold text-navy-deep">Ders Programı</h2>
-        </div>
-        <div className="divide-y divide-border">
-          {dersler.map((d, i) => (
-            <div key={i} className="py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <p className="font-medium text-navy-deep leading-snug">{d.title}</p>
-              <p className="text-sm text-muted-foreground sm:text-right sm:shrink-0 sm:ml-8">{d.instructor}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
 
 </>
 );
