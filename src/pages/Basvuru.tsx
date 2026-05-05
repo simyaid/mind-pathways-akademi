@@ -12,7 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SCRIPT_URL = "BURAYA_APPS_SCRIPT_URL_YAZIN";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw0V39mVrE8HzdQFU1-MQ_5sCU3XnTPh9JbSbhde7D0O-AhHMliyx5umJtMS_b2HuLp/exec";
 
 const emptyForm = {
   ad: "",
