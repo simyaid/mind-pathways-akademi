@@ -11,6 +11,7 @@ import KursDetay from "./pages/FormasyonHazirlikDetay";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import PsikodiyalektikCalisma from "./pages/PsikodiyalektikCalisma";
+import Basvuru from "./pages/Basvuru";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/kurslar/:slug" element={<KursDetay />} />
             <Route path="/kadro" element={<Team />} />
             <Route path="/kadro/:slug" element={<Team />} />
+            <Route path="/basvuru" element={<Basvuru />} />
             <Route path="/iletisim" element={<Contact />} />
           </Route>
           <Route path="*" element={<NotFound />} />
