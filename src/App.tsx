@@ -10,10 +10,7 @@ import Formation from "./pages/Kurslar";
 import KursDetay from "./pages/FormasyonHazirlikDetay";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
-import PsikodiyalektikDusunce from "./pages/PsikodiyalektikDusunce";
 import PsikodiyalektikCalisma from "./pages/PsikodiyalektikCalisma";
-import Duyurular from "./pages/Duyurular";
-import Etkinlikler from "./pages/Etkinlikler";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,13 +25,10 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="/hakkimizda" element={<About />} />
-            <Route path="/psikodiyalektik-dusunce" element={<PsikodiyalektikDusunce />} />
             <Route path="/formasyon" element={<Formation />} />
             <Route path="/psikodiyalektik-calisma" element={<PsikodiyalektikCalisma />} />
             <Route path="/kurslar/:slug" element={<KursDetay />} />
             <Route path="/kadro" element={<Team />} />
-            <Route path="/duyurular" element={<Duyurular />} />
-            <Route path="/etkinlikler" element={<Etkinlikler />} />
             <Route path="/kadro/:slug" element={<Team />} />
             <Route path="/iletisim" element={<Contact />} />
           </Route>
