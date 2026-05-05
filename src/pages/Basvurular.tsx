@@ -23,6 +23,25 @@ const ogrenimLabel: Record<string, string> = {
   "yuksek-lisans": "Yüksek Lisans",
 };
 
+function fetchJSONP(url: string): Promise<Kayit[]> {
+  return new Promise((resolve, reject) => {
+    const cbName = "jsonp_cb_" + Date.now();
+    const script = document.createElement("script");
+    (window as any)[cbName] = (data: Kayit[]) => {
+      delete (window as any)[cbName];
+      document.body.removeChild(script);
+      resolve(data);
+    };
+    script.onerror = () => {
+      delete (window as any)[cbName];
+      document.body.removeChild(script);
+      reject(new Error("JSONP failed"));
+    };
+    script.src = url + "?callback=" + cbName;
+    document.body.appendChild(script);
+  });
+}
+
 const Basvurular = () => {
   const [list, setList] = useState<Kayit[]>([]);
   const [selected, setSelected] = useState<Kayit | null>(null);
@@ -30,8 +49,7 @@ const Basvurular = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch(SCRIPT_URL)
-      .then((r) => r.json())
+    fetchJSONP(SCRIPT_URL)
       .then((data) => setList(data.reverse()))
       .catch(() => setError(true))
       .finally(() => setLoading(false));
