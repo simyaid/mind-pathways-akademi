@@ -12,6 +12,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+const SCRIPT_URL = "BURAYA_APPS_SCRIPT_URL_YAZIN";
+
 const emptyForm = {
   ad: "",
   soyad: "",
@@ -31,8 +33,16 @@ const Basvuru = () => {
   const set = (field: string, value: string | boolean) =>
     setForm((f) => ({ ...f, [field]: value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify(form),
+      });
+    } catch (_) {}
     setSubmitted(true);
   };
 
@@ -67,7 +77,7 @@ const Basvuru = () => {
                   <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500">Program Ücreti</p>
                   <p className="font-display text-2xl font-semibold text-navy-deep">50.000 TL <span className="text-base font-normal text-muted-foreground">+ KDV</span></p>
                 </div>
-                <div className="space-y-1 sm:text-right">
+                <div className="space-y-1">
                   <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500">İletişim</p>
                   <p className="text-sm text-muted-foreground">akademipsikodiyalektik@gmail.com</p>
                   <p className="text-sm text-muted-foreground">+90 (544) 809 79 09</p>
