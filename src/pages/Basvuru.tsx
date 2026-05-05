@@ -75,17 +75,29 @@ const Basvuru = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="tcKimlik">T.C. Kimlik Numaranız</Label>
-                <Input id="tcKimlik" required maxLength={11} value={form.tcKimlik} onChange={(e) => set("tcKimlik", e.target.value)} />
+                <Input
+                  id="tcKimlik" required maxLength={11} inputMode="numeric"
+                  value={form.tcKimlik}
+                  onChange={(e) => set("tcKimlik", e.target.value.replace(/\D/g, ""))}
+                />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="email">E-mail Adresiniz</Label>
-                <Input id="email" type="email" required value={form.email} onChange={(e) => set("email", e.target.value)} />
+                <Input
+                  id="email" type="email" required
+                  value={form.email}
+                  onChange={(e) => set("email", e.target.value)}
+                />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="telefon">Cep Telefonu</Label>
-                <Input id="telefon" type="tel" required value={form.telefon} onChange={(e) => set("telefon", e.target.value)} />
+                <Input
+                  id="telefon" required inputMode="numeric"
+                  value={form.telefon}
+                  onChange={(e) => set("telefon", e.target.value.replace(/\D/g, ""))}
+                />
               </div>
 
               <div className="space-y-2">
@@ -133,7 +145,17 @@ const Basvuru = () => {
                 variant="amber"
                 size="lg"
                 className="w-full"
-                disabled={!form.kvkk || !form.ogrenimDurumu}
+                disabled={
+                  !form.kvkk ||
+                  !form.ogrenimDurumu ||
+                  !form.ad.trim() ||
+                  !form.soyad.trim() ||
+                  !form.tcKimlik.trim() ||
+                  !form.email.trim() ||
+                  !form.telefon.trim() ||
+                  !form.ilIlce.trim() ||
+                  !form.meslek.trim()
+                }
               >
                 Gönder
               </Button>
