@@ -8,8 +8,8 @@ import akademiLogo from "@/assets/AkademiLogo.png";
 const navItems = [
   { to: "/", label: "Ana Sayfa" },
   { to: "/hakkimizda", label: "Hakkımızda" },
-  { to: "/formasyon", label: "Psikodiyalektik Formasyon" },
   { to: "/psikodiyalektik-calisma", label: "Psikodiyalektik Çalışma" },
+  { to: "/formasyon", label: "Psikodiyalektik Formasyon" },
   { to: "/kadro", label: "Öğreticiler" },
   { to: "/etkinlikler", label: "Etkinlikler" },
   { to: "/iletisim", label: "İletişim" },

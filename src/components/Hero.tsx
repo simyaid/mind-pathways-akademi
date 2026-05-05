@@ -3,6 +3,7 @@ import { ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { BasvuruFormu } from "@/components/BasvuruFormu";
 import heroGorsel1png from "@/assets/herogorsel (1).png";
 import heroGorsel1jpg from "@/assets/herogorsel (1).jpg";
 import heroGorsel1jpeg from "@/assets/herogorsel (1).jpeg";
@@ -16,6 +17,7 @@ const INTERVAL = 4000;
 
 export const Hero = () => {
   const [current, setCurrent] = useState(0);
+  const [formOpen, setFormOpen] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -25,6 +27,7 @@ export const Hero = () => {
   }, []);
 
   return (
+    <>
     <section className="relative overflow-hidden min-h-[90vh] flex items-center">
       {/* Arka plan görseller */}
       <AnimatePresence initial={false}>
@@ -64,10 +67,8 @@ export const Hero = () => {
           </blockquote>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Button asChild variant="amber" size="lg">
-              <Link to="/formasyon">
-                Başvur <ArrowRight className="ml-1" />
-              </Link>
+            <Button variant="amber" size="lg" onClick={() => setFormOpen(true)}>
+              Başvur <ArrowRight className="ml-1" />
             </Button>
             <Button asChild size="lg" className="border-white/40 text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm">
               <Link to="/hakkimizda">
@@ -105,5 +106,8 @@ export const Hero = () => {
         </motion.div>
       </div>
     </section>
+
+    <BasvuruFormu open={formOpen} onClose={() => setFormOpen(false)} />
+    </>
   );
 };

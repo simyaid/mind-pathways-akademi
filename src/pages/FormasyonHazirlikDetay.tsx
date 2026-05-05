@@ -38,7 +38,7 @@ const kurslar: Record<string, Kurs> = {
     description: "Psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.",
     amac: "Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır.",
     icerik: [
-      { baslik: "Psikodiyalektik Düşünceye Giriş Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül 2026", tur: "Yüzyüze",
+      { baslik: "Psikodiyalektik Düşünceye Giriş Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül 2026", tur: "Fiziksel Katılım",
         konular: [
           "Ruhsallık kavramı üzerine",
           "Diyalektik düşünmenin temelleri",
@@ -102,7 +102,7 @@ const kurslar: Record<string, Kurs> = {
         konular: ["Derin yoksulluk halleri"],
       },
 
-      { baslik: "Öğreticilerle Buluşma ve Atölyeler (4-5-6 Aralık 2026)", metin: "", tur: "Yüzyüze",
+      { baslik: "Öğreticilerle Buluşma ve Atölyeler (4-5-6 Aralık 2026)", metin: "", tur: "Fiziksel Katılım",
         konular: [
           { grup: "4 Aralık 2026 Cuma", maddeler: [
             "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
@@ -166,7 +166,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "Öğreticilerle Buluşma ve Atölyeler (26-27-28 Şubat 2027)", metin: "", tur: "Yüzyüze",
+      { baslik: "Öğreticilerle Buluşma ve Atölyeler (26-27-28 Şubat 2027)", metin: "", tur: "Fiziksel Katılım",
         konular: [
           { grup: "26 Şubat 2027 Cuma", maddeler: [
             "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
@@ -217,7 +217,7 @@ const kurslar: Record<string, Kurs> = {
         konular: ["Kral Oidipus", "Medea ve Antigone", "Hamlet"],
       },
 
-      { baslik: "Öğreticilerle Buluşma ve Atölyeler (28-29-30 Mayıs 2027)", metin: "", tur: "Yüzyüze",
+      { baslik: "Öğreticilerle Buluşma ve Atölyeler (28-29-30 Mayıs 2027)", metin: "", tur: "Fiziksel Katılım",
         konular: [
           { grup: "28 Mayıs 2027 Cuma", maddeler: [
             "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
@@ -237,9 +237,10 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
     ],
-    sure: "1 Yıl",
+    sure: "Eylül 2026 – Mayıs 2027",
     kimler: "Tüm disiplinlerden katılımcılara açıktır.",
     modulIcerikBaslik: "Program İçeriği",
+    icerikBaslik: "",
   },
   "formasyon-hazirlik": {
     modul: "1. Yıl",
@@ -324,7 +325,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
     ],
-    sure: "1 Yıl",
+    sure: "Eylül 2026 – Mayıs 2027",
     kimler: "Formasyon hazırlık aşamasını tamamlamış katılımcılar için tasarlanmıştır.",
     alinti: "\"Düşünmek bir eylemdir; ama düşünmeyi öğrenmek bir ömür sürer.\"",
     dersler: [
@@ -410,7 +411,7 @@ const kurslar: Record<string, Kurs> = {
           "Utancın Ruhsal Güzergahları (Amati Sas'ın Utanç ve Travma Kuramı Üzerine)",
         ],
       },
-      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüzyüze" },
+      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Fiziksel Katılım" },
       { baslik: "Psikodiyalektik Olgu Çalışması", metin: "21 Eylül 2026 - 28 Haziran 2027 tarihleri arasında her Pazartesi 16.00-17.30 arasında yapılacaktır.", tur: "Çevrimiçi" },
       { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ayda bir yapılacaktır." },
     ],
@@ -433,7 +434,7 @@ const kurslar: Record<string, Kurs> = {
         baslik: "Psikodiyalektik Çalışma Temrinleri",
         egitmen: "",
         tarih: "11:00 - 18:00",
-        tur: "Yüzyüze",
+        tur: "Fiziksel Katılım",
         konular: [
           { grup: "TARİHLER", maddeler: [
             "4 Ekim 2026",
@@ -445,7 +446,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
     ],
-    sure: "1 Yıl",
+    sure: "Eylül 2026 – Mayıs 2027",
     kimler: "1. Modülü tamamlamış ve psikodiyalektik teoriye hâkim olan katılımcılar için tasarlanmıştır.",
     alinti: "\"Bilmek başlangıçtır; uygulamak ise dönüşümün kendisidir.\"",
     icerikBaslik: "Kurslar",
@@ -456,7 +457,7 @@ const kurslar: Record<string, Kurs> = {
     description: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder.",
     amac: "Kuram, klinik perspektif ve kültürel incelemeler bir araya gelerek düşünme ve uygulama arasında bütünlüklü bir yetkinlik oluşturur. Katılımcılar bu aşamada yalnızca uygulaycı değil, aynı zamanda psikodiyalektik kültürün taşıyıcısı olmaya başlar.",
     icerik: [
-      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Yüzyüze" },
+      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Fiziksel Katılım" },
       { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
@@ -494,7 +495,7 @@ const kurslar: Record<string, Kurs> = {
         konular: ["Shakespeare"],
       },
     ],
-    sure: "1 Yıl",
+    sure: "Eylül 2026 – Mayıs 2027",
     kimler: "2. Modülü tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",
     alinti: "\"İleri gitmek; daha fazla bilmek değil, daha derinden anlamaktır.\"",
   },
@@ -514,7 +515,7 @@ const kurslar: Record<string, Kurs> = {
         konular: ["Shakespeare", "Dostoyevski"],
       },
     ],
-    sure: "Tamamlayıcı dönem",
+    sure: "Eylül 2026 – Mayıs 2027",
     kimler: "Formasyon sürecini tamamlamış ve psikodiyalektik çalışmayı yaşam boyu bir pratik olarak benimsemek isteyen bireyler için tasarlanmıştır.",
     alinti: "\"Tamamlamak bir son değil; yeni bir başlangıcın zeminidir.\"",
     icerikBaslik: "Çalışmalar",
@@ -535,7 +536,7 @@ const kurslar: Record<string, Kurs> = {
         konular: ["Shakespeare", "Dostoyevski"],
       },
     ],
-    sure: "Tamamlayıcı dönem",
+    sure: "Eylül 2026 – Mayıs 2027",
     kimler: "Formasyon sürecini tamamlamış ve psikodiyalektik çalışmayı yaşam boyu bir pratik olarak benimsemek isteyen bireyler için tasarlanmıştır.",
     alinti: "\"Tamamlamak bir son değil; yeni bir başlangıcın zeminidir.\"",
     icerikBaslik: "Çalışmalar",
@@ -573,7 +574,7 @@ const KursDetay = () => {
             <div className="lg:sticky lg:top-28 space-y-8">
               <div>
                 <span className="text-[16px] font-bold uppercase tracking-[0.2em] text-navy-500 whitespace-pre-line">Süre</span>
-                <p className="mt-2 font-display text-lg text-navy-deep">{kurs.sure}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{kurs.sure}</p>
               </div>
               <div>
                 <span className="text-[16px] font-bold uppercase tracking-[0.2em] text-navy-500 whitespace-pre-line">Kimler İçin</span>
@@ -605,8 +606,9 @@ const KursDetay = () => {
                   const hasContent = item.metin || item.egitmen || item.tarih || item.tur || item.konular;
                   if (!hasContent) {
                     return (
-                      <div key={i} className="border-l-2 border-amber pl-6 py-4">
-                        <span className="font-display font-semibold text-[21px] text-navy-deep">{item.baslik}</span>
+                      <div key={i} className="pt-8 pb-1">
+                        <p className="text-[14px] font-bold uppercase tracking-[0.18em] text-navy-500 mb-2">{item.baslik}</p>
+                        <div className="h-px bg-border" />
                       </div>
                     );
                   }
@@ -618,9 +620,9 @@ const KursDetay = () => {
                     <AccordionContent className="text-[16px] text-muted-foreground">
                       {(item.egitmen || item.tarih || item.tur) ? (
                         <div className="flex flex-col gap-0.5 text-xs font-sans mb-3">
-                          {item.egitmen && <span>Eğitmen: {item.egitmen}</span>}
+                          {item.egitmen && <span>Öğretici: {item.egitmen}</span>}
                           {item.tarih && <span>Tarih: {item.tarih}</span>}
-                          {item.tur && <span>Eğitim Formatı: {item.tur}</span>}
+                          {item.tur && <span>Katılım: {item.tur}</span>}
                           {item.metin && <span className="mt-1">{item.metin}</span>}
                         </div>
                       ) : (
@@ -668,8 +670,8 @@ const KursDetay = () => {
                       </AccordionTrigger>
                       <AccordionContent className="text-[16px] text-muted-foreground">
                         <div className="flex flex-col gap-0.5 text-xs font-sans mb-3">
-                          {ders.egitmen && <span>Eğitmen: {ders.egitmen}</span>}
-                          {ders.tur && <span>Eğitim Formatı: {ders.tur}</span>}
+                          {ders.egitmen && <span>Öğretici: {ders.egitmen}</span>}
+                          {ders.tur && <span>Katılım: {ders.tur}</span>}
                           {ders.tarih && <span>{ders.tarih}</span>}
                         </div>
                         <ul className="mt-4 space-y-2">
