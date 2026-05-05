@@ -15,6 +15,7 @@ import Basvuru from "./pages/Basvuru";
 import Basvurular from "./pages/Basvurular";
 import Dersler from "./pages/Dersler";
 import KurslarListesi from "./pages/KurslarListesi";
+import Etkinlikler from "./pages/Etkinlikler";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/dersler" element={<Dersler />} />
             <Route path="/kurslar-listesi" element={<KurslarListesi />} />
             <Route path="/on-basvurular-listesi" element={<Basvurular />} />
+            <Route path="/etkinlikler" element={<Etkinlikler />} />
             <Route path="/iletisim" element={<Contact />} />
           </Route>
           <Route path="*" element={<NotFound />} />

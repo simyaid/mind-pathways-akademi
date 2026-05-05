@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, Scale, Sprout, Megaphone } from "lucide-react";
+import { Users, Scale, Sprout, Megaphone, BookOpen } from "lucide-react";
 
 const values = [
   {
@@ -22,6 +22,11 @@ const values = [
     title: ["İleri", "Aşama"],
     text: "Kuram, deneyim ve yorum birleşir. Psikodiyalektik yaklaşım kişisel bir kavrayışa dönüşür.",
   },
+  {
+    icon: BookOpen,
+    title: "Tamamlayıcı Çalışmalar",
+    text: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
+  },
 ];
 
 export const ValuesSection = () => (
@@ -30,11 +35,11 @@ export const ValuesSection = () => (
       <div className="max-w-2xl mb-16">
         <span className="eyebrow mb-5">Formasyon Süreci</span>
         <h2 className="font-display text-3xl lg:text-[2.5rem] leading-tight font-medium text-navy-deep mt-4">
-          Düşünceden deneyime, bireyden gruba uzanan dört aşamalı bir süreç.
+          Düşünceden deneyime, bireyden gruba uzanan beş aşamalı bir süreç.
         </h2>
       </div>
 
-      <div className="grid gap-px bg-border rounded-lg overflow-hidden md:grid-cols-2 lg:grid-cols-4 shadow-soft">
+      <div className="grid gap-px bg-border rounded-lg overflow-hidden md:grid-cols-2 lg:grid-cols-5 shadow-soft">
         {values.map((v, i) => (
           <motion.div
             key={Array.isArray(v.title) ? v.title.join("-") : v.title}
@@ -48,7 +53,7 @@ export const ValuesSection = () => (
               <v.icon className="h-5 w-5" />
             </div>
 
-            <h3 className="font-display text-xl font-semibold text-navy-deep mt-6 group-hover:text-primary-foreground transition-colors">
+            <h3 className="font-display text-base font-semibold text-navy-deep mt-6 group-hover:text-primary-foreground transition-colors">
               {Array.isArray(v.title) ? (
                 <>
                   {v.title[0]}
@@ -60,7 +65,7 @@ export const ValuesSection = () => (
               )}
             </h3>
 
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground group-hover:text-primary-foreground/75 transition-colors">
+            <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground group-hover:text-primary-foreground/75 transition-colors">
               {v.text}
             </p>
 
