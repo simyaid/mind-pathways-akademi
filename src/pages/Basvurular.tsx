@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwEXKV6IrYFClbuVnu9SkOjTmL5DlC9AmDoQAtM7jNlyuULNHwFuSYBBFXYu-0bIrgq/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxqEYTBleB5qk2lFdnkE0zv-bZ2XkoX2kziTOXBJBsBfEW2se7D_XGbNDenZP_pgm5h/exec";
 
 type Kayit = {
   tarih: string;
