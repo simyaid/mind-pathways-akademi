@@ -14,12 +14,20 @@ const navItems = [
     label: "Psikodiyalektik Formasyon",
     submenu: [
       { to: "/formasyon", label: "Kurslar" },
-      { to: "/formasyon", label: "Dersler" },
       { to: "/kurslar/hazirlik", label: "Formasyon Hazırlık" },
       { to: "/kurslar/formasyon-hazirlik", label: "1. Yıl — Psikodiyalektik Teori ve Pratik" },
       { to: "/kurslar/1-modul", label: "2. Yıl — Psikodiyalektik Çalışma" },
       { to: "/kurslar/2-modul", label: "3. Yıl — Psikodiyalektik Formasyon İleri Kursu" },
       { to: "/kurslar/3-modul", label: "4. Yıl — Tamamlayıcı Çalışmalar" },
+      { to: "/formasyon", label: "Dersler" },
+      { to: "/formasyon", label: "Psikodiyalektik Düşünceye Giriş — C. Dindar" },
+      { to: "/formasyon", label: "Psikodiyalektik Çalışma Başlangıç — C. Dindar" },
+      { to: "/formasyon", label: "Psikodiyalektik Çalışmanın İlkeleri — C. Dindar" },
+      { to: "/formasyon", label: "Psikodiyalektik Formasyon İleri — C. Dindar" },
+      { to: "/formasyon", label: "Psikoterapinin Temel İlkeleri — Y.E. Aydın" },
+      { to: "/formasyon", label: "Temel Psikoterapi — C. Atbaşoğlu, T. Oral" },
+      { to: "/formasyon", label: "Merkezin Dışındaki Sesler — A.S. Kilisli" },
+      { to: "/formasyon", label: "Bağlanma - Travma - Utanç — İ. Saygılı" },
     ],
   },
   { to: "/kadro", label: "Öğreticiler" },
@@ -85,7 +93,7 @@ export const Navbar = () => {
                   </NavLink>
 
                   {/* Dropdown */}
-                  <div className="absolute left-0 top-full pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="absolute left-0 top-full pt-2 w-96 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="bg-background border border-border rounded-lg shadow-lg py-2 overflow-hidden">
                       {item.submenu.map((sub, i) =>
                         "group" in sub ? (
