@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 
 const steps = [
   {
+    n: "Formasyon Hazırlık",
+    title: "Psikodiyalektik Formasyona Hazırlık Programı",
+    slug: "hazirlik",
+    text: "Psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.",
+  },
+  {
     n: "1. Yıl",
     title: "Psikodiyalektik Teori ve Pratik",
     slug: "formasyon-hazirlik",
