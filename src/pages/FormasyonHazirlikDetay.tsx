@@ -1,6 +1,5 @@
 import { useParams, Link } from "react-router-dom";
 import { PageHeader } from "@/components/PageHeader";
-import { CtaSection } from "@/components/CtaSection";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { ArrowLeft, Info } from "lucide-react";
 import { ReactNode } from "react";
@@ -34,45 +33,8 @@ type Kurs = {
 
 const kurslar: Record<string, Kurs> = {
   "formasyon-hazirlik": {
-    modul: "Formasyon Hazırlık",
-    title: <>Psikodiyalektik<br />Formasyon Programı</>,
-    description: "Psikodiyalektik Formasyona Hazırlık Programı psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar. ",
-    amac: <>
-      <p>Psikodiyalektik Formasyon Programının birinci yılı; psikodiyalektik teori ve pratik ile ilgili dersleri ve uygulamaları içerir. İkinci yılı kuramsal ve pratik deneyimi yetkinleştirilmeye yöneliktir.</p>
-      <p>Formasyondaki adaylar, formasyonun ikinci yıl ile birlikte Formasyonda Psikodiyalektik Çalışmacı olarak adlandırılırlar ve psikodiyalektik çalışma için başvuruları kabul ederler.</p>
-    </>,
-    icerik: [
-      { baslik: "İleri Teorik Çalışmalar", metin: "" },
-      { baslik: "Psikodiyalektik Çalışma Temrinleri", metin: "" },
-      { baslik: "Olgu ve Süpervizyon Çalışmaları", metin: "" },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "" },
-    ],
-    sure: "Hazırlık dönemi",
-    kimler: "Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır. ",
-    icerikBaslik: "",
-    modulIcerikBaslik: "Formasyon İçeriği",
-    not: "En az bir yıl psikodiyalektik çalışmacı olarak Psikodiyalektik çalışma süreci yürüten aday, özgün bir metin yazımı ve bir psikodiyalektik kültür çalışması yaptıktan sonra Psikodiyalektik Çalışmacı ünvanı alır ve belgesi Akademi Psikodiyalektik değerlendirmesi sonrası Halk İçin Psikoterapi Derneği ile ortak düzenlenir.",
-    not2: "Adaylar, formasyonun ikinci yılı ile birlikte HALK İÇİN PSİKOTERAPİ DERNEĞİ'ne üye olurlar ve Halk İçin Psikoterapi Derneği tüzüğünün üyeler için belirlediği sorumluluğu yerine getirmekle yükümlüdürler.",
-    katilimKosullari: (
-      <ul className="space-y-3">
-        <li className="flex items-center gap-3">
-          <span className="h-0.5 w-5 bg-amber flex-shrink-0" />
-          <span>Psikodiyalektik Formasyona Hazırlık Programı'nı tamamlamış olmak.</span>
-        </li>
-        <li className="flex items-center gap-3">
-          <span className="h-0.5 w-5 bg-amber flex-shrink-0" />
-          <span>Psikodiyalektik çalışmada kendi ruhsallığını çalışıyor olmak.</span>
-        </li>
-        <li className="flex items-center gap-3">
-          <span className="h-0.5 w-5 bg-amber flex-shrink-0" />
-          <span>Yapılacak görüşme sonrasında Psikodiyalektik Formasyon'a kabul almış olmak.</span>
-        </li>
-      </ul>
-    ),
-  },
-  "1-modul": {
-    modul: "1. Modül",
-    title: "Psikodiyalektik Teori ve Pratik",
+    modul: "1. Yıl",
+    title: <>Psikodiyalektik<br />Teori ve Pratik</>,
     description: "Psikodiyalektik yaklaşımın teorik temellerini ve uygulama pratiklerini bir araya getirerek katılımcının ruhsallık, birey ve toplumsallık arasındaki ilişkileri derinlemesine kavramasını hedefler.",
     amac: "Bireysel çalışmadan grup süreçlerine uzanan bu bütünsel yapı, düşünceyi deneyimle buluşturarak gerçek bir dönüşüm alanı açar. Katılımcılar bu modülde psikodiyalektik düşüncenin temel kavramlarını öğrenir ve bunları pratik bağlamlarda uygulamaya başlar.",
     icerik: [
@@ -83,8 +45,6 @@ const kurslar: Record<string, Kurs> = {
           "Diyalektik Düşünmenin Temelleri",
           "Canlılık - Ruhsallık - Toplumsallık",
           "Tarihsel ve Güncel Çerçeve",
-
-
           { grup: "FREUD", maddeler: ["Rüya Çalışmasının Diyalektiği", "Kitle Ruhsallığı", "Totem ve Tabu", "Uygarlık ve Ruhsallık"] },
           { grup: "WINNICOTT", maddeler: ["Geçiş Diyalektiği", "İç ve Dış Dünya Diyalektiği: Kültürün Yeri"] },
           { grup: "KLEIN", maddeler: ["Klein Teorisi", "Başlangıçlara Dair: Bebek ve İlkellik", "Paranoid-Şizoid ve Depresif Konum: Kaos ve Kozmos", "Psikososyolojik Grup Teorileri: Foulkes ve Diğerleri", "Frankfurt Okulu"] },
@@ -99,25 +59,25 @@ const kurslar: Record<string, Kurs> = {
           { grup: "18 Ekim\n11:00 - 19:00", maddeler: ["İçgörü ve Değişim", "Aktarım", "Karşı Aktarım", "Direnç ve Olumsuz Terapötik Tepki", "Derinlemesine Çalışma", "Olgu Sunumu"] },
         ],
       },
-   { baslik: "Psikodiyalektik Çalışma Başlangıç Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "8-9-10 Ocak", tur: "Fiziksel Katılım",
-  konular: [
-    "Psikodiyalektik Çalışma ve Gelişim",
-    "Psikodiyalektik Çalışma: Teori ve Pratik",
-    "Psikodiyalektik Çalışmada Zarf ve Mazruf",
-    "'İnsan Olmak'",
-    "'Kendini Bilmek'",
-    "Ruhsal Çalışmanın Metaforu Olarak 'Büyümek'",
-    "Bireyden Gruba… Zaman ve Mekan Duyumları",
-    "İç Dünya-Dış Dünya Diyalektiği",
-    "Psikodiyalektik Terapinin Uygulama Aşamaları",
-    "Bireysel Çalışma Tekniği",
-    "Küçük Grup Oluşumu: Cinselliğin Düzenlenmesi",
-    "Büyük Grup Oluşumu: Saldırganlığın Düzenlenmesi",
-    "Toplumsal Bağ: Cinsellik ve Saldırganlık Diyalektiği",
-    "Psikodiyalektik Eğitimin Nitelikleri: Acı Dirlik - Şenlikli Bilgi",
-    "Psikodiyalektik Süreçte Deneyimden Öğrenmek",
-  ],
-},
+      { baslik: "Psikodiyalektik Çalışma Başlangıç Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "8-9-10 Ocak", tur: "Fiziksel Katılım",
+        konular: [
+          "Psikodiyalektik Çalışma ve Gelişim",
+          "Psikodiyalektik Çalışma: Teori ve Pratik",
+          "Psikodiyalektik Çalışmada Zarf ve Mazruf",
+          "'İnsan Olmak'",
+          "'Kendini Bilmek'",
+          "Ruhsal Çalışmanın Metaforu Olarak 'Büyümek'",
+          "Bireyden Gruba… Zaman ve Mekan Duyumları",
+          "İç Dünya-Dış Dünya Diyalektiği",
+          "Psikodiyalektik Terapinin Uygulama Aşamaları",
+          "Bireysel Çalışma Tekniği",
+          "Küçük Grup Oluşumu: Cinselliğin Düzenlenmesi",
+          "Büyük Grup Oluşumu: Saldırganlığın Düzenlenmesi",
+          "Toplumsal Bağ: Cinsellik ve Saldırganlık Diyalektiği",
+          "Psikodiyalektik Eğitimin Nitelikleri: Acı Dirlik - Şenlikli Bilgi",
+          "Psikodiyalektik Süreçte Deneyimden Öğrenmek",
+        ],
+      },
       { baslik: "Psikodiyalektik Çalışmanın İlkeleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "9-10-11 Nisan", tur: "Fiziksel Katılım",
         konular: [
           { grup: "Bireysel çalışmada ilkeler", maddeler: [
@@ -156,7 +116,7 @@ const kurslar: Record<string, Kurs> = {
       },
     ],
     sure: "1 Yıl",
-    kimler: "Formasyon hazırlık aşamasını tamamlamış veya psikodiyalektik yaklaşımla temel düzeyde tanışıklığı olan katılımcılar için tasarlanmıştır.",
+    kimler: "Formasyon hazırlık aşamasını tamamlamış katılımcılar için tasarlanmıştır.",
     alinti: "\"Düşünmek bir eylemdir; ama düşünmeyi öğrenmek bir ömür sürer.\"",
     dersler: [
       {
@@ -199,9 +159,11 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
     ],
+    icerikBaslik: "",
+    modulIcerikBaslik: "Kurslar",
   },
-  "2-modul": {
-    modul: "2. Modül",
+  "1-modul": {
+    modul: "2. Yıl",
     title: "Psikodiyalektik Çalışma",
     description: "Psikodiyalektik düşünce bu aşamada yalnızca öğrenilmez, doğrudan çalışma içinde uygulanır.",
     amac: "Kuramsal çerçeve; olgu analizleri, grup süreçleri ve bireysel deneyimle iç içe ilerleyerek katılımcının düşünme, anlama ve müdahale etme kapasitesini somut bir pratik içinde geliştirir. Bu süreçte bilgi, yalnızca kavranan değil, deneyimlenerek dönüştürülen bir yapıya dönüşür.",
@@ -279,8 +241,8 @@ const kurslar: Record<string, Kurs> = {
     alinti: "\"Bilmek başlangıçtır; uygulamak ise dönüşümün kendisidir.\"",
     icerikBaslik: "Kurslar",
   },
-  "3-modul": {
-    modul: "3. Modül",
+  "2-modul": {
+    modul: "3. Yıl",
     title: <>Psikodiyalektik<br />Formasyon İleri Kursu</>,
     description: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder.",
     amac: "Kuram, klinik perspektif ve kültürel incelemeler bir araya gelerek düşünme ve uygulama arasında bütünlüklü bir yetkinlik oluşturur. Katılımcılar bu aşamada yalnızca uygulaycı değil, aynı zamanda psikodiyalektik kültürün taşıyıcısı olmaya başlar.",
@@ -327,8 +289,29 @@ const kurslar: Record<string, Kurs> = {
     kimler: "2. Modülü tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",
     alinti: "\"İleri gitmek; daha fazla bilmek değil, daha derinden anlamaktır.\"",
   },
+  "3-modul": {
+    modul: "4. Yıl",
+    title: "Tamamlayıcı Çalışmalar",
+    description: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
+    amac: <>
+      <p>Kavram çalışmaları, dil ve edebiyat üzerinden ruhsallık çok katmanlı bir biçimde yeniden düşünülür. Bu modül, psikodiyalektik formasyonu tamamlamış katılımcılara sürekli bir düşünsel zemin sunar.</p>
+      <p className="italic">(Akademi Psikodiyalektik formasyon programı için tamamlayıcı çalışmalara katılım zorunlu değildir.)</p>
+    </>,
+    icerik: [
+      { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
+      { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "", egitmen: "Fatih Artvinli", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Kültür İncelemeleri", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", tur: "Hibrit",
+        konular: ["Shakespeare", "Dostoyevski"],
+      },
+    ],
+    sure: "Tamamlayıcı dönem",
+    kimler: "Formasyon sürecini tamamlamış ve psikodiyalektik çalışmayı yaşam boyu bir pratik olarak benimsemek isteyen bireyler için tasarlanmıştır.",
+    alinti: "\"Tamamlamak bir son değil; yeni bir başlangıcın zeminidir.\"",
+    icerikBaslik: "Çalışmalar",
+  },
   "4-modul": {
-    modul: "4. Modül",
+    modul: "4. Yıl",
     title: "Tamamlayıcı Çalışmalar",
     description: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
     amac: <>
@@ -539,8 +522,7 @@ const KursDetay = () => {
         </div>
       </section>
 
-      <CtaSection />
-    </>
+</>
   );
 };
 

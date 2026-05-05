@@ -8,8 +8,10 @@ import akademiLogo from "@/assets/AkademiLogo.png";
 const navItems = [
   { to: "/", label: "Ana Sayfa" },
   { to: "/hakkimizda", label: "Hakkımızda" },
-  { to: "/formasyon", label: "Formasyon Süreci" },
-  { to: "/kadro", label: "Kadromuz" },
+  { to: "/formasyon", label: "Psikodiyalektik Formasyon" },
+  { to: "/psikodiyalektik-calisma", label: "Psikodiyalektik Çalışma" },
+  { to: "/kadro", label: "Öğreticiler" },
+  { to: "/etkinlikler", label: "Etkinlikler" },
   { to: "/iletisim", label: "İletişim" },
 ];
 
@@ -50,7 +52,7 @@ export const Navbar = () => {
                 end={item.to === "/"}
                 className={({ isActive }) =>
                   cn(
-                    "relative px-4 py-2 text-sm font-medium transition-colors",
+                    "relative px-3 py-2 text-xs font-medium transition-colors",
                     isActive ? "text-navy-deep" : "text-muted-foreground hover:text-navy-deep"
                   )
                 }

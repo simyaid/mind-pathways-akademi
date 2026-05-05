@@ -4,7 +4,7 @@ import { Users, Scale, Sprout, Megaphone } from "lucide-react";
 const values = [
   {
     icon: Users,
-    title: "Psikodiyalektik Düşünce",
+    title: "Formasyona Hazırlık",
     text: "Ruhsallık, diyalektik düşünce ve psikanalitik kuramın temel kavramlarıyla tanışma.",
   },
   {

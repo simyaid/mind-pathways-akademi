@@ -7,7 +7,7 @@ export const AboutPreview = () => (
       <div className="lg:col-span-5">
         <span className="eyebrow mb-5">Hakkımızda</span>
         <h2 className="font-display text-3xl lg:text-[2.4rem] leading-tight font-medium text-navy-deep mt-4">
-          Ruhsallık alanında yeni bir anlayışın temsilcisi
+          Psikodiyalektik:<br />Yeni Bir Paradigma Önerisi
         </h2>
       </div>
       <div className="lg:col-span-7 space-y-6 text-[1.02rem] leading-relaxed text-muted-foreground">

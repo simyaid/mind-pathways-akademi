@@ -1,49 +1,70 @@
 import { PageHeader } from "@/components/PageHeader";
 import { motion } from "framer-motion";
-import { CtaSection } from "@/components/CtaSection";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const steps = [
   {
-    n: "Formasyon Hazırlık",
-    title: "Hazırlık Dönemi",
-    slug: "formasyon-hazirlik",
-    text: "Psikodiyalektik Formasyona Hazırlık Programı psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.",
-  },
-  {
-    n: "1. Modül",
+    n: "1. Yıl",
     title: "Psikodiyalektik Teori ve Pratik",
-    slug: "1-modul",
-    text: "Psikodiyalektik yaklaşımın teorik temellerini ve uygulama pratiklerini bir araya getirerek katılımcının ruhsallık, birey ve toplumsallık arasındaki ilişkileri derinlemesine kavramasını hedefler. Bireysel çalışmadan grup süreçlerine uzanan bu bütünsel yapı, düşünceyi deneyimle buluşturarak gerçek bir dönüşüm alanı açar.",
+    slug: "formasyon-hazirlik",
+    text: "Psikodiyalektik yaklaşımın teorik temellerini ve uygulama pratiklerini bir araya getirerek katılımcının ruhsallık, birey ve toplumsallık arasındaki ilişkileri derinlemesine kavramasını hedefler.",
   },
   {
-    n: "2. Modül",
+    n: "2. Yıl",
     title: "Psikodiyalektik Çalışma",
-    slug: "2-modul",
+    slug: "1-modul",
     text: "Psikodiyalektik düşünce bu aşamada yalnızca öğrenilmez, doğrudan çalışma içinde uygulanır. Kuramsal çerçeve; olgu analizleri, grup süreçleri ve bireysel deneyimle iç içe ilerleyerek katılımcının düşünme, anlama ve müdahale etme kapasitesini somut bir pratik içinde geliştirir.",
   },
   {
-    n: "3. Modül",
+    n: "3. Yıl",
     title: "Psikodiyalektik Formasyon İleri Kursu",
-    slug: "3-modul",
-    text: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder. Kuram, klinik perspektif ve kültürel incelemeler bir araya gelerek düşünme ve uygulama arasında bütünlüklü bir yetkinlik oluşturur.",
+    slug: "2-modul",
+    text: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder.",
   },
   {
-    n: "4. Modül",
+    n: "4. Yıl",
     title: "Tamamlayıcı Çalışmalar",
-    slug: "4-modul",
-    text: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar. Kavram çalışmaları, dil ve edebiyat üzerinden ruhsallık çok katmanlı bir biçimde yeniden düşünülür.",
+    slug: "3-modul",
+    text: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
   },
 ];
 
 const Formation = () => (
   <>
     <PageHeader
-      eyebrow="Kurslar"
-      title={<>Beş aşamada <em className="italic font-normal">yapılandırılmış</em> bir gelişim yolculuğu.</>}
-      description="Formasyon programımız; teori, diyalog ve uygulama olmak üzere üç eksen üzerinde, toplam 5 yıl süren modüler bir yapı içerir."
+      eyebrow="Psikodiyalektik Formasyon"
+      title={<>Psikodiyalektik<br />Formasyon Programı</>}
+      description="Psikodiyalektik çalışmacı adayları için AKADEMİ PSİKODİYALEKTİK tarafından oluşturulmuş formasyon programının adıdır."
     />
+
+    <section className="py-20 lg:py-28">
+      <div className="container-tight max-w-3xl space-y-4 text-[1.05rem] leading-relaxed text-muted-foreground">
+        <p className="font-semibold text-navy-deep">Psikodiyalektik Formasyon Programı için kabul koşulları şunlardır:</p>
+        <ul className="space-y-2 pl-4">
+          <li className="flex items-start gap-3"><span className="h-0.5 w-4 bg-amber flex-shrink-0 mt-3" />Psikodiyalektik Formasyona Hazırlık Programı'nı tamamlamış olmak.</li>
+          <li className="flex items-start gap-3"><span className="h-0.5 w-4 bg-amber flex-shrink-0 mt-3" />Psikodiyalektik çalışmada kendi ruhsallığını çalışıyor olmak.</li>
+          <li className="flex items-start gap-3"><span className="h-0.5 w-4 bg-amber flex-shrink-0 mt-3" />Yapılacak görüşme sonrasında Psikodiyalektik Formasyon'a kabul almış olmak.</li>
+        </ul>
+        <p>Psikodiyalektik Formasyon Programının birinci yılı; psikodiyalektik teori ve pratik ile ilgili dersleri ve uygulamaları içerir. İkinci yılı kuramsal ve pratik deneyimi yetkinleştirilmeye yöneliktir.</p>
+        <p>Formasyondaki adaylar, formasyonun ikinci yıl ile birlikte formasyonda <strong>Psikodiyalektik Çalışmacı</strong> olarak adlandırılırlar ve psikodiyalektik çalışma için başvuruları kabul ederler.<br />Bu süreçte;<br />
+        İleri teorik çalışmalar,<br />
+        Psikodiyalektik çalışma temrinleri<br />
+        Olgu ve süpervizyon çalışmaları<br />
+        Psikodiyalektik kültür çalışmaları yapılır.</p>
+        <div className="border border-border rounded-lg p-6 bg-surface text-sm">
+          En az bir yıl psikodiyalektik çalışmacı olarak Psikodiyalektik çalışma süreci yürüten aday, özgün bir metin yazımı ve bir psikodiyalektik kültür çalışması yaptıktan sonra Psikodiyalektik Çalışmacı ünvanı alır ve belgesi Akademi Psikodiyalektik değerlendirmesi sonrası Halk İçin Psikoterapi Derneği ile ortak düzenlenir.
+        </div>
+        <div className="border border-border rounded-lg p-6 bg-surface text-sm">
+          Adaylar, formasyonun ikinci yılı ile birlikte HALK İÇİN PSİKOTERAPİ DERNEĞİ'ne üye olurlar ve Halk İçin Psikoterapi Derneği tüzüğünün üyeler için belirlediği sorumluluğu yerine getirmekle yükümlüdürler.
+        </div>
+        <h2 className="font-display text-2xl lg:text-3xl font-semibold text-navy-deep pt-8">
+          Psikodiyalektik Formasyona Hazırlık Programı
+        </h2>
+        <p>Psikodiyalektik Formasyona Hazırlık Programı psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.</p>
+        <p>Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır.</p>
+      </div>
+    </section>
 
     <section className="py-20 lg:py-28">
       <div className="container-tight">
@@ -95,8 +116,7 @@ const Formation = () => (
       </div>
     </section>
 
-    <CtaSection />
-  </>
+</>
 );
 
 export default Formation;

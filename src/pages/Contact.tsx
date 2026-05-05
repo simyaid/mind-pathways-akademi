@@ -24,7 +24,6 @@ const Contact = () => {
     <>
       <PageHeader
         eyebrow="İletişim"
-        title="Bir soru, bir başvuru ya da bir diyalog için."
         description="Programlarımız, başvuru süreçleri ya da işbirliği önerileri hakkında doğrudan bizimle iletişime geçebilirsiniz."
       />
 
@@ -40,7 +39,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted-foreground">E-posta</p>
-                    <p className="mt-1 text-navy-deep font-medium">bilgi@halkicinpsikoterapi.com</p>
+                    <p className="mt-1 text-navy-deep font-medium">akademipsikodiyalektik@gmail.com</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -49,7 +48,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted-foreground">Telefon</p>
-                    <p className="mt-1 text-navy-deep font-medium">+90 (530) 638 09 23</p>
+                    <p className="mt-1 text-navy-deep font-medium">+90 (544) 809 79 09</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -64,11 +63,6 @@ const Contact = () => {
               </ul>
             </div>
 
-            <div className="border-l-2 border-amber pl-5 py-1">
-              <p className="font-display italic text-navy-deep leading-snug">
-                "Diyalog, iki monolog değildir. Karşılıklı bir hazır bulunuş hâlidir."
-              </p>
-            </div>
           </aside>
 
           <form

@@ -5,7 +5,7 @@ const About = () => (
   <>
     <PageHeader
       eyebrow="Hakkımızda"
-      title={<>Bir arayışın vardığı değil,<br /><span className="underline decoration-amber decoration-2 underline-offset-4 font-bold">devam ettiği</span> yer.</>}
+      title={<>Psikodiyalektik:<br />Yeni Bir Paradigma Önerisi</>}
       description={<>
         <p>Akademi Psikodiyalektik; insanlığın tarihiyle ve insanın evrensel hakikatiyle uyarlı bir ruhsallık bilgisinin geliştirilmesi ve bu bilginin uygulama alanlarının ve kültürünün oluşturulması için kurulmuştur.</p>
         <p>1990’ların ikinci yarısında Bakırköy Ruh ve Sinir Hastalıkları Hastanesi’nde çıkan aura dergisinden başlayan ve Akıl Defteri dergisi ve sonrasında Psikodiyalektik Araştırmalar Derneği ile devam eden arayışın geldiği aşamadır.</p>

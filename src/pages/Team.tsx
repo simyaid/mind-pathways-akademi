@@ -99,7 +99,7 @@ export const team = [
   },
   {
     slug: "ismail-gezgin",
-    name: "Prof. Dr. İsmail Gezgin",
+    name: "İsmail Gezgin",
     role: "Akademisyen & Yazar",
     initials: "İG",
     photo: ismailGezginPhoto,
@@ -186,7 +186,7 @@ export const team = [
   },
   {
     slug: "semih-celenk",
-    name: "Prof. Dr. Semih Çelenk",
+    name: "Semih Çelenk",
     role: "Tiyatro & Sahne Sanatları",
     initials: "SÇ",
     photo: semihCelenkPhoto,
@@ -197,7 +197,7 @@ export const team = [
   },
   {
     slug: "timucin-oral",
-    name: "Prof. Dr. E. Timuçin Oral",
+    name: "Timuçin Oral",
     role: "Psikiyatri & Duygudurum Bozuklukları",
     initials: "TO",
     photo: timucinOralPhoto,
@@ -262,8 +262,7 @@ const Team = () => {
                 )}
               </div>
               <div>
-                <span className="eyebrow mb-4">{member.role}</span>
-                <h1 className="font-display text-4xl lg:text-5xl text-navy-deep mt-3 font-medium leading-tight">{member.name}</h1>
+                <h1 className="font-display text-4xl lg:text-5xl text-navy-deep font-medium leading-tight">{member.name}</h1>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {member.focus.map((f) => (
                     <span key={f} className="text-xs uppercase tracking-wider px-3 py-1.5 rounded-full border border-navy-deep/15 text-navy-700">
@@ -294,8 +293,8 @@ const Team = () => {
   return (
     <>
       <PageHeader
-        eyebrow="Kadro"
-        title={<>Akademi Psikodiyalektik <br /> Eğitim Kadrosu</>}
+        eyebrow="Öğreticiler"
+        title={<>Akademi Psikodiyalektik <br /> Öğreticiler</>}
           description={
     <>
       Akademi'nin eğitmen kadrosu; klinik psikoloji, felsefe, eğitim bilimleri <br />
@@ -330,8 +329,7 @@ const Team = () => {
                   </div>
                   <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-amber transition-colors" />
                 </div>
-                <span className="block mt-6 text-xs uppercase tracking-[0.18em] text-navy-500">{m.role}</span>
-                <h3 className="font-display text-xl font-semibold text-navy-deep mt-2">{m.name}</h3>
+                <h3 className="font-display text-xl font-semibold text-navy-deep mt-6">{m.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground line-clamp-3">{m.bio}</p>
               </Link>
             </motion.div>

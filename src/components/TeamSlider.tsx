@@ -14,9 +14,9 @@ export const TeamSlider = () => (
     <div className="container-tight">
       <div className="flex items-end justify-between mb-10">
         <div>
-          <span className="eyebrow mb-5">Kadromuz</span>
+          <span className="eyebrow mb-5">Öğreticiler</span>
           <h2 className="font-display text-3xl lg:text-[2.5rem] text-navy-deep leading-tight font-medium mt-4">
-            Akademi Psikodiyalektik<br />Eğitim Kadrosu
+            Akademi Psikodiyalektik<br />Öğreticileri
           </h2>
         </div>
         <Link
@@ -47,7 +47,6 @@ export const TeamSlider = () => (
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-amber transition-colors" />
                 </div>
-                <span className="block text-xs uppercase tracking-[0.18em] text-navy-500">{m.role}</span>
                 <h3 className="font-display text-lg font-semibold text-navy-deep mt-1.5">{m.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-2">{m.bio}</p>
               </Link>
