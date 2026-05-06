@@ -33,8 +33,8 @@ const App = () => (
             <Route path="/formasyon" element={<Formation />} />
             <Route path="/psikodiyalektik-calisma" element={<PsikodiyalektikCalisma />} />
             <Route path="/kurslar/:slug" element={<KursDetay />} />
-            <Route path="/kadro" element={<Team />} />
-            <Route path="/kadro/:slug" element={<Team />} />
+            <Route path="/ogreticiler" element={<Team />} />
+            <Route path="/ogreticiler/:slug" element={<Team />} />
             <Route path="/basvuru" element={<Basvuru />} />
             <Route path="/dersler" element={<Dersler />} />
             <Route path="/kurslar-listesi" element={<KurslarListesi />} />

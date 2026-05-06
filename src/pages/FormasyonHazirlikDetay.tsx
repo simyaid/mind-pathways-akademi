@@ -242,7 +242,7 @@ const kurslar: Record<string, Kurs> = {
     modulIcerikBaslik: "Program İçeriği",
     icerikBaslik: "",
   },
-  "formasyon-hazirlik": {
+  "1-yil": {
     modul: "1. Yıl",
     title: <>Psikodiyalektik<br />Teori ve Pratik</>,
     description: "Psikodiyalektik yaklaşımın teorik temellerini ve uygulama pratiklerini bir araya getirerek katılımcının ruhsallık, birey ve toplumsallık arasındaki ilişkileri derinlemesine kavramasını hedefler.",
@@ -451,7 +451,7 @@ const kurslar: Record<string, Kurs> = {
     alinti: "\"Bilmek başlangıçtır; uygulamak ise dönüşümün kendisidir.\"",
     icerikBaslik: "Kurslar",
   },
-  "2-modul": {
+  "3-yil": {
     modul: "3. Yıl",
     title: <>Psikodiyalektik<br />Formasyon İleri Kursu</>,
     description: "",
@@ -499,7 +499,7 @@ const kurslar: Record<string, Kurs> = {
     kimler: "2. Yılı tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",
     alinti: "\"İleri gitmek; daha fazla bilmek değil, daha derinden anlamaktır.\"",
   },
-  "3-modul": {
+  "4-yil": {
     modul: "4. Yıl",
     title: "Tamamlayıcı Çalışmalar",
     description: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",

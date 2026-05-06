@@ -20,7 +20,7 @@ export const TeamSlider = () => (
           </h2>
         </div>
         <Link
-          to="/kadro"
+          to="/ogreticiler"
           className="hidden sm:inline-flex items-center gap-1.5 text-sm text-navy-deep hover:text-amber transition-colors"
         >
           Tümünü gör <ArrowUpRight className="h-4 w-4" />
@@ -32,7 +32,7 @@ export const TeamSlider = () => (
           {team.map((m) => (
             <CarouselItem key={m.slug} className="pl-4 sm:basis-1/2 lg:basis-1/3">
               <Link
-                to={`/kadro/${m.slug}`}
+                to={`/ogreticiler/${m.slug}`}
                 className="group block bg-card border border-border rounded-lg p-6 hover:border-navy-deep/40 hover:shadow-card transition-all h-full"
               >
                 <div className="flex items-start justify-between mb-5">
@@ -58,7 +58,7 @@ export const TeamSlider = () => (
       </Carousel>
 
       <div className="mt-8 sm:hidden text-center">
-        <Link to="/kadro" className="text-sm text-navy-deep hover:text-amber transition-colors inline-flex items-center gap-1.5">
+        <Link to="/ogreticiler" className="text-sm text-navy-deep hover:text-amber transition-colors inline-flex items-center gap-1.5">
           Tümünü gör <ArrowUpRight className="h-4 w-4" />
         </Link>
       </div>

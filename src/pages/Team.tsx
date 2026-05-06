@@ -259,7 +259,7 @@ const Team = () => {
       return (
         <div className="container-tight py-32 text-center">
           <p className="text-muted-foreground">Eğitmen bulunamadı.</p>
-          <Link to="/kadro" className="text-navy-deep underline mt-4 inline-block">Kadroya dön</Link>
+          <Link to="/ogreticiler" className="text-navy-deep underline mt-4 inline-block">Kadroya dön</Link>
         </div>
       );
     }
@@ -268,7 +268,7 @@ const Team = () => {
       <>
         <section className="pt-12 lg:pt-20 pb-12 bg-surface border-b border-border">
           <div className="container-tight">
-            <Link to="/kadro" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-navy-deep mb-10">
+            <Link to="/ogreticiler" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-navy-deep mb-10">
               <ArrowLeft className="h-4 w-4" /> Kadroya dön
             </Link>
             <div className="grid gap-10 lg:grid-cols-[auto_1fr] items-end">
@@ -334,7 +334,7 @@ const Team = () => {
               transition={{ duration: 0.45, delay: i * 0.05 }}
             >
               <Link
-                to={`/kadro/${m.slug}`}
+                to={`/ogreticiler/${m.slug}`}
                 className="group block bg-card border border-border rounded-lg p-7 hover:border-navy-deep/40 hover:shadow-card transition-all h-full"
               >
                 <div className="flex items-start justify-between">

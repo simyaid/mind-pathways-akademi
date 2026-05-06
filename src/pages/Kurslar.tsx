@@ -14,7 +14,7 @@ const steps = [
   {
     n: "1. Yıl",
     title: "Psikodiyalektik Teori ve Pratik",
-    slug: "formasyon-hazirlik",
+    slug: "1-yil",
     text: "Psikodiyalektik yaklaşımın teorik temellerini ve uygulama pratiklerini bir araya getirerek katılımcının ruhsallık, birey ve toplumsallık arasındaki ilişkileri derinlemesine kavramasını hedefler.",
   },
   {
@@ -26,13 +26,13 @@ const steps = [
   {
     n: "3. Yıl",
     title: "Psikodiyalektik Formasyon İleri Kursu",
-    slug: "2-modul",
+    slug: "3-yil",
     text: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder.",
   },
   {
     n: "4. Yıl",
     title: "Tamamlayıcı Çalışmalar",
-    slug: "3-modul",
+    slug: "4-yil",
     text: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
   },
 ];
