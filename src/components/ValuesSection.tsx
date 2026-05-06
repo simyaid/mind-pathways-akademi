@@ -4,7 +4,7 @@ import { Users, Scale, Sprout, Megaphone, BookOpen } from "lucide-react";
 const values = [
   {
     icon: Users,
-    title: "Formasyona Hazırlık",
+    title: ["Formasyona", "Hazırlık"],
     text: "Ruhsallık, diyalektik düşünce ve psikanalitik kuramın temel kavramlarıyla tanışma.",
   },
   {
@@ -44,7 +44,7 @@ export const ValuesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className="group bg-card p-8 lg:p-10 transition-colors hover:bg-navy-deep flex flex-col h-full"
+            className="group bg-card p-[21px] lg:p-7 transition-colors hover:bg-navy-deep flex flex-col h-full"
           >
             <div className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-navy-deep/5 text-navy-deep group-hover:bg-amber group-hover:text-navy-deep transition-colors">
               <v.icon className="h-5 w-5" />
