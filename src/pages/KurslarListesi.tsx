@@ -156,7 +156,7 @@ const kurslar: Kurs[] = [
   },
   {
     title: "Bağlanma – Travma – Utanç",
-    instructor: "İshak Saygılı",
+    instructor: "İshak Sayğılı",
     content: [
       { kind: "items", values: [
         "John Bowlby ve Bağlanma Kuramı'nı Yeniden Psikanalizin İçinden Düşünmek",

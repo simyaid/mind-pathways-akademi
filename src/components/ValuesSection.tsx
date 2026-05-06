@@ -32,11 +32,8 @@ const values = [
 export const ValuesSection = () => (
   <section className="py-24 lg:py-32 bg-surface border-b border-border">
     <div className="container-tight">
-      <div className="max-w-2xl mb-16">
+      <div className="max-w-2xl mb-4">
         <span className="eyebrow mb-5">Formasyon Süreci</span>
-        <h2 className="font-display text-3xl lg:text-[2.5rem] leading-tight font-medium text-navy-deep mt-4">
-          Düşünceden deneyime, bireyden gruba uzanan beş aşamalı bir süreç.
-        </h2>
       </div>
 
       <div className="grid gap-px bg-border rounded-lg overflow-hidden md:grid-cols-2 lg:grid-cols-5 shadow-soft">
@@ -69,10 +66,6 @@ export const ValuesSection = () => (
               {v.text}
             </p>
 
-            {/* SAYIYI EN ALTA SABİTLE */}
-            <span className="mt-auto pt-6 inline-block text-[0.7rem] tracking-[0.2em] uppercase text-navy-300 group-hover:text-amber transition-colors">
-              0{i + 1}
-            </span>
           </motion.div>
         ))}
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { PageHeader } from "@/components/PageHeader";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -12,7 +13,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHQOaWbix6Onu5UCTQPLBwe49Uj-tKfFS31oTgpbLGAB9_DWlAsTDuRNHFzy-PUhy6/exec";
+const EMAILJS_SERVICE = "service_hz1o6jq";
+const EMAILJS_TEMPLATE = "template_ok6rqd4";
+const EMAILJS_KEY = "xR1EO_zu8Xm-_jvhg";
 
 const emptyForm = {
   ad: "",
@@ -36,12 +39,22 @@ const Basvuru = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await fetch(SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "text/plain" },
-        body: JSON.stringify(form),
-      });
+      await emailjs.send(
+        EMAILJS_SERVICE,
+        EMAILJS_TEMPLATE,
+        {
+          tarih: new Date().toLocaleDateString("tr-TR"),
+          ad: form.ad,
+          soyad: form.soyad,
+          tcKimlik: form.tcKimlik,
+          email: form.email,
+          telefon: form.telefon,
+          ilIlce: form.ilIlce,
+          meslek: form.meslek,
+          ogrenimDurumu: form.ogrenimDurumu,
+        },
+        EMAILJS_KEY
+      );
     } catch (_) {}
     setSubmitted(true);
   };

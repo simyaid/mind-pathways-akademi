@@ -20,7 +20,7 @@ const steps = [
   {
     n: "2. Yıl",
     title: "Psikodiyalektik Çalışma",
-    slug: "1-modul",
+    slug: "2-yil",
     text: "Psikodiyalektik düşünce bu aşamada yalnızca öğrenilmez, doğrudan çalışma içinde uygulanır. Kuramsal çerçeve; olgu analizleri, grup süreçleri ve bireysel deneyimle iç içe ilerleyerek katılımcının düşünme, anlama ve müdahale etme kapasitesini somut bir pratik içinde geliştirir.",
   },
   {

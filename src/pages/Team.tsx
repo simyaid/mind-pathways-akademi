@@ -197,7 +197,7 @@ export const team = [
   },
   {
     slug: "ishak-saygili",
-    name: "İshak Saygılı",
+    name: "İshak Sayğılı",
     role: "Psikanaliz & Travma",
     initials: "İS",
     bio: "Bağlanma kuramı, travma ve psikanaliz üzerine çalışmaktadır.",
@@ -207,13 +207,13 @@ export const team = [
   },
   {
     slug: "ahmet-kilisli",
-    name: "Ahmet Sait Kilisli",
+    name: "Ahmet S. Kilisli",
     role: "Psikanaliz",
     initials: "AK",
     photo: ahmetKilisliPhoto,
     bio: "Ağırlıklı olarak Erken Dönem Nesne İlişkileri üzerine yoğunlaşmaktadır. Psikanalitik kuramsal çerçeveler ışığında ruhsal çatışmaların bedensel izdüşümlerini ele alan Psikosomatik ilgilendiği alanlardır.",
     long: "2000 yılında Samsun 19 Mayıs Üniversitesi Fen-Edebiyat Fakültesi Psikoloji Bölümü'nden mezun oldu. 2015 yılında Haliç Üniversitesi'nde yüksek lisansını tamamladı. 2016 yılında İstanbul Çocuk ve Ergen Psikanalitik Psikoterapi Formasyonu'na katıldı. IPA (Uluslararası Psikanaliz Birliği) üyesi bir psikanalist ile kendi psikanaliz sürecini tamamladı. Ağırlıklı olarak Erken Dönem Nesne İlişkileri üzerine yoğunlaşmaktadır. Psikanalitik kuramsal çerçeveler ışığında; ruhsal çatışmaların bedensel izdüşümlerini ele alan Psikosomatik ilgilendiği alanlardır.",
-    longExtra: "Ahmet Sait Kilisli, klinik pratiğinin yanı sıra sinema, edebiyat ve toplumsal olguların psikanalitik duyarlılıkla incelendiği disiplinlerarası çalışmalar yürütmektedir. Çalışmalarını ergen ve yetişkinlere yönelik psikanalitik yönelimli terapi çerçevesinde sürdürmektedir.",
+    longExtra: "Ahmet S. Kilisli, klinik pratiğinin yanı sıra sinema, edebiyat ve toplumsal olguların psikanalitik duyarlılıkla incelendiği disiplinlerarası çalışmalar yürütmektedir. Çalışmalarını ergen ve yetişkinlere yönelik psikanalitik yönelimli terapi çerçevesinde sürdürmektedir.",
     focus: ["Psikanaliz", "Nesne İlişkileri", "Psikosomatik"],
   },
   {

@@ -189,7 +189,7 @@ const dersler: Ders[] = [
     instructor: "Fatih Artvinli",
     content: [
       { kind: "text", value: "Bu derste, 'ruhsal hastalık' fikrinin tarihsel oluşumuna ve değişen anlam dünyalarına odaklanıyoruz. Ruhsallığın ne olduğuna ve nasıl bozulduğuna dair insanlık tarihinin farklı dönemlerinde üretilen açıklamaları, yalnızca tıbbî değil, aynı zamanda kültürel, siyasal ve düşünsel bağlamlarıyla ele alıyoruz." },
-      { kind: "text", value: "İlk modülde Antikçağ'dan modern bilime uzanan çizgide ruhsal bozuklukların doğa felsefesi, din, tıp ve ahlakla nasıl iç içe geçtiğini tartışıyoruz. Son derste ise Türkiye'de ruh sağlığı alanının kurumsallaşma sürecine yakından bakıyoruz." },
+      { kind: "text", value: "İlk yılda Antikçağ'dan modern bilime uzanan çizgide ruhsal bozuklukların doğa felsefesi, din, tıp ve ahlakla nasıl iç içe geçtiğini tartışıyoruz. Son derste ise Türkiye'de ruh sağlığı alanının kurumsallaşma sürecine yakından bakıyoruz." },
       { kind: "header", value: "Kaynakça" },
       { kind: "items", values: [
         "Andrew Scull, Uygarlık ve Delilik - Akıl Hastalığının Kültürel Tarihi, Çev: Nurettin Elhüseyni, Yapı Kredi Yayınları, 2016",
