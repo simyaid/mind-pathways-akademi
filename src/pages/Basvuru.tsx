@@ -12,7 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxqEYTBleB5qk2lFdnkE0zv-bZ2XkoX2kziTOXBJBsBfEW2se7D_XGbNDenZP_pgm5h/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHQOaWbix6Onu5UCTQPLBwe49Uj-tKfFS31oTgpbLGAB9_DWlAsTDuRNHFzy-PUhy6/exec";
 
 const emptyForm = {
   ad: "",
