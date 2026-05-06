@@ -6,18 +6,38 @@ import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
+
+const EMAILJS_SERVICE = "service_hz1o6jq";
+const EMAILJS_TEMPLATE = "template_zarqwx8";
+const EMAILJS_KEY = "xR1EO_zu8Xm-_jvhg";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    const form = e.target as HTMLFormElement;
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE,
+        EMAILJS_TEMPLATE,
+        {
+          name: (form.querySelector("#name") as HTMLInputElement).value,
+          email: (form.querySelector("#email") as HTMLInputElement).value,
+          subject: (form.querySelector("#subject") as HTMLInputElement).value,
+          message: (form.querySelector("#message") as HTMLTextAreaElement).value,
+        },
+        EMAILJS_KEY
+      );
       toast.success("Mesajınız ulaştı. En kısa sürede geri döneceğiz.");
-      (e.target as HTMLFormElement).reset();
-    }, 700);
+      form.reset();
+    } catch {
+      toast.error("Mesaj gönderilemedi. Lütfen tekrar deneyin.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
