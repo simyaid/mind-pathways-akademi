@@ -38,7 +38,7 @@ const kurslar: Record<string, Kurs> = {
     description: "Psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.",
     amac: "Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır.",
     icerik: [
-      { baslik: "Psikodiyalektik Düşünceye Giriş Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül 2026", tur: "Yüz yüze",
+      { baslik: "Psikodiyalektik Düşünceye Giriş", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül 2026", tur: "Yüz yüze",
         konular: [
           "Ruhsallık kavramı üzerine",
           "Diyalektik düşünmenin temelleri",
@@ -269,7 +269,7 @@ const kurslar: Record<string, Kurs> = {
           { grup: "18 Ekim\n11:00 - 19:00", maddeler: ["İçgörü ve Değişim", "Aktarım", "Karşı Aktarım", "Direnç ve Olumsuz Terapötik Tepki", "Derinlemesine Çalışma", "Olgu Sunumu"] },
         ],
       },
-      { baslik: "Psikodiyalektik Çalışma Başlangıç Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "8-9-10 Ocak", tur: "Yüz yüze",
+      { baslik: "Psikodiyalektik Çalışma Başlangıç", metin: "", egitmen: "Cemal Dindar", tarih: "8-9-10 Ocak", tur: "Yüz yüze",
         konular: [
           "Psikodiyalektik Çalışma ve Gelişim",
           "Psikodiyalektik Çalışma: Teori ve Pratik",
@@ -288,7 +288,7 @@ const kurslar: Record<string, Kurs> = {
           "Psikodiyalektik Süreçte Deneyimden Öğrenmek",
         ],
       },
-      { baslik: "Psikodiyalektik Çalışmanın İlkeleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "9-10-11 Nisan", tur: "Yüz yüze",
+      { baslik: "Psikodiyalektik Çalışmanın İlkeleri", metin: "", egitmen: "Cemal Dindar", tarih: "9-10-11 Nisan", tur: "Yüz yüze",
         konular: [
           { grup: "Bireysel çalışmada ilkeler", maddeler: [
             "Ruhsal Çalışma: Çalışmanın Mobiusu",
@@ -314,7 +314,7 @@ const kurslar: Record<string, Kurs> = {
           ]},
         ],
       },
-      { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Yüz yüze",
+      { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Yüz yüze",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
           "Psikozlar: Belirtiler ve Ayırıcı Tanı",
@@ -369,8 +369,8 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
     ],
-    icerikBaslik: "",
-    modulIcerikBaslik: "Kurslar",
+    icerikBaslik: "Kurslar",
+    modulIcerikBaslik: "Program İçeriği",
   },
   "2-yil": {
     modul: "2. Yıl",
@@ -378,7 +378,7 @@ const kurslar: Record<string, Kurs> = {
     description: "Psikodiyalektik düşünce bu aşamada yalnızca öğrenilmez, doğrudan çalışma içinde uygulanır.",
     amac: "",
     icerik: [
-      { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
+      { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
           "Psikozlar: Belirtiler ve Ayırıcı Tanı",
@@ -411,7 +411,7 @@ const kurslar: Record<string, Kurs> = {
           "Utancın Ruhsal Güzergahları (Amati Sas'ın Utanç ve Travma Kuramı Üzerine)",
         ],
       },
-      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüz yüze" },
+      { baslik: "Psikodiyalektik Formasyon İleri", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüz yüze" },
       { baslik: "Psikodiyalektik Olgu Çalışması", metin: "21 Eylül 2026 - 28 Haziran 2027 tarihleri arasında her Pazartesi 16.00-17.30 arasında yapılacaktır.", tur: "Çevrimiçi" },
       { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ayda bir yapılacaktır." },
     ],
@@ -457,8 +457,8 @@ const kurslar: Record<string, Kurs> = {
     description: "",
     amac: "Kuram, klinik perspektif ve kültürel incelemeler bir araya gelerek düşünme ve uygulama arasında bütünlüklü bir yetkinlik oluşturur. Katılımcılar bu aşamada yalnızca uygulaycı değil, aynı zamanda psikodiyalektik kültürün taşıyıcısı olmaya başlar.",
     icerik: [
-      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Yüz yüze" },
-      { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
+      { baslik: "Psikodiyalektik Formasyon İleri", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Yüz yüze" },
+      { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
           "Psikozlar: Belirtiler ve Ayırıcı Tanı",

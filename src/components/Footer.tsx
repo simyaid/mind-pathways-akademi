@@ -18,8 +18,8 @@ export const Footer = () => (
         <div className="text-right md:col-start-4">
           <h4 className="font-display text-sm font-semibold text-navy-deep mb-4">İletişim</h4>
           <ul className="space-y-2.5 text-sm text-muted-foreground">
-            <li>bilgi@halkicinpsikoterapi.com</li>
-            <li>+90 (530) 638 09 23</li>
+            <li>akademipsikodiyalektik@gmail.com</li>
+            <li>+90 (544) 809 79 09</li>
             <li>Halaskargazi Caddesi Kutlu Apt. 182/6 Şişli/İstanbul</li>
           </ul>
         </div>
