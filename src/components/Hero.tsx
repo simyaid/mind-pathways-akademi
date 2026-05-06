@@ -9,8 +9,29 @@ import heroGorsel1jpeg from "@/assets/herogorsel (1).jpeg";
 import heroGorsel2 from "@/assets/herogorsel (2).jpg";
 import heroGorsel3 from "@/assets/herogorsel (3).jpg";
 import heroGorsel4 from "@/assets/herogorsel (4).jpg";
+import herooGorsel from "@/assets/heroogorsel.jpeg";
+import heroGoGorsel from "@/assets/hero görsel.jpeg";
+import herogorsell1 from "@/assets/herogorsell (1).jpg";
+import herogorsell2 from "@/assets/herogorsell (2).jpg";
+import herogorsell3 from "@/assets/herogorsell (3).JPG";
+import herogorsell4 from "@/assets/herogorsell (4).JPG";
+import herogorsell5 from "@/assets/herogorsell (5).jpg";
 
-const heroImages = [heroGorsel1jpeg, heroGorsel2, heroGorsel1png, heroGorsel1jpg, heroGorsel3, heroGorsel4];
+const heroImages = [
+  heroGorsel1jpeg,
+  heroGorsel2,
+  heroGorsel1png,
+  heroGorsel1jpg,
+  heroGorsel3,
+  heroGorsel4,
+  herooGorsel,
+  heroGoGorsel,
+  herogorsell1,
+  herogorsell2,
+  herogorsell3,
+  herogorsell4,
+  herogorsell5,
+];
 
 const INTERVAL = 4000;
 
@@ -79,7 +100,7 @@ export const Hero = () => {
           <dl className="mt-14 grid grid-cols-3 gap-8 max-w-md border-t border-white/20 pt-8">
             <div>
               <dt className="text-2xl font-display font-semibold text-white">12+</dt>
-              <dd className="text-xs uppercase tracking-wider text-white/60 mt-1">Eğitmen</dd>
+              <dd className="text-xs uppercase tracking-wider text-white/60 mt-1">Öğretici</dd>
             </div>
             <div>
               <dt className="text-2xl font-display font-semibold text-white">700+</dt>
@@ -87,7 +108,7 @@ export const Hero = () => {
             </div>
             <div>
               <dt className="text-2xl font-display font-semibold text-white">4</dt>
-              <dd className="text-xs uppercase tracking-wider text-white/60 mt-1">Modül</dd>
+              <dd className="text-xs uppercase tracking-wider text-white/60 mt-1">Yıl</dd>
             </div>
           </dl>
           {/* Dot göstergesi */}

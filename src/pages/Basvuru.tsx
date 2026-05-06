@@ -65,6 +65,17 @@ const Basvuru = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-8">
+              <dl className="grid grid-cols-2 gap-8 max-w-xs border-b border-border pb-8">
+                <div>
+                  <dt className="text-3xl font-display font-semibold text-navy-deep">200+</dt>
+                  <dd className="text-xs uppercase tracking-wider text-navy-500 mt-1">Saat</dd>
+                </div>
+                <div>
+                  <dt className="text-3xl font-display font-semibold text-navy-deep">12+</dt>
+                  <dd className="text-xs uppercase tracking-wider text-navy-500 mt-1">Öğretici</dd>
+                </div>
+              </dl>
+
               <div className="space-y-3 text-[1.05rem] leading-relaxed text-muted-foreground">
                 <p>
                   Psikodiyalektik Formasyona Hazırlık Programı psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.
