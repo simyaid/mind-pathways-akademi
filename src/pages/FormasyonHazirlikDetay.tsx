@@ -388,7 +388,7 @@ const kurslar: Record<string, Kurs> = {
           "Genel Tıbbi Duruma Bağlı Psikiyatrik Tablolar",
         ],
       },
-      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "20-21 Mart", tur: "Hibrit",
+      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "14 - 15 Kasım", tur: "Hibrit",
         konular: [
           "Sándor Ferenczi",
           "José Bleger, Heinrich Racker, Enrique Pichon-Rivière",
@@ -468,7 +468,7 @@ const kurslar: Record<string, Kurs> = {
           "Genel Tıbbi Duruma Bağlı Psikiyatrik Tablolar",
         ],
       },
-      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "20-21 Mart", tur: "Hibrit",
+      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "14 - 15 Kasım", tur: "Hibrit",
         konular: [
           "Sándor Ferenczi",
           "José Bleger, Heinrich Racker, Enrique Pichon-Rivière",
