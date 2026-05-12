@@ -107,7 +107,7 @@ export const Hero = () => {
               <dd className="text-xs uppercase tracking-wider text-white/60 mt-1">Saat</dd>
             </div>
             <div>
-              <dt className="text-2xl font-display font-semibold text-white">4</dt>
+              <dt className="text-2xl font-display font-semibold text-white">3</dt>
               <dd className="text-xs uppercase tracking-wider text-white/60 mt-1">Yıl</dd>
             </div>
           </dl>
