@@ -17,9 +17,11 @@ export const PageHeader = ({ eyebrow, title, description }: PageHeaderProps) => 
         className="max-w-3xl"
       >
         <span className="eyebrow mb-6">{eyebrow}</span>
-        <h1 className="font-display text-4xl lg:text-[3.25rem] leading-[1.05] font-medium text-navy-deep mt-4">
-          {title}
-        </h1>
+        {title && (
+          <h1 className="font-display text-4xl lg:text-[3.25rem] leading-[1.05] font-medium text-navy-deep mt-4">
+            {title}
+          </h1>
+        )}
         {description && (
           <div className="mt-7 text-lg leading-relaxed text-muted-foreground max-w-2xl space-y-4">{description}</div>
         )}

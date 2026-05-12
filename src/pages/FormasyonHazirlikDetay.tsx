@@ -412,12 +412,11 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
       { baslik: "Psikodiyalektik Formasyon İleri", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüz yüze" },
-      { baslik: "Psikodiyalektik Olgu Çalışması", metin: "21 Eylül 2026 - 28 Haziran 2027 tarihleri arasında her Pazartesi 16.00-17.30 arasında yapılacaktır.", tur: "Çevrimiçi" },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ayda bir yapılacaktır." },
+      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     dersler: [
       {
-        baslik: "Klein Çalışması",
+        baslik: "Klein Metinleri",
         egitmen: "Cemal Dindar",
         tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri saat 10.30-12.00 arasında hibrit yapılacaktır. 'Diyalektik Metin Çalışmaları' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
@@ -426,7 +425,7 @@ const kurslar: Record<string, Kurs> = {
       {
         baslik: "Diyalektik Metin Çalışmaları",
         egitmen: "Cemal Dindar",
-        tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri 10.30-12.00 arasında hibrit yapılacaktır. 'Klein Çalışması' ile dönüşümlü gerçekleştirilecektir.",
+        tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri 10.30-12.00 arasında hibrit yapılacaktır. 'Klein Metinleri' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
         konular: ["Tinin Fenomenolojisi'nin Önsözü / W.F. Hegel"],
       },
@@ -453,9 +452,9 @@ const kurslar: Record<string, Kurs> = {
   },
   "3-yil": {
     modul: "3. Yıl",
-    title: <>Psikodiyalektik<br />Formasyon İleri Kursu</>,
+    title: "",
     description: "",
-    amac: "Kuram, klinik perspektif ve kültürel incelemeler bir araya gelerek düşünme ve uygulama arasında bütünlüklü bir yetkinlik oluşturur. Katılımcılar bu aşamada yalnızca uygulaycı değil, aynı zamanda psikodiyalektik kültürün taşıyıcısı olmaya başlar.",
+    amac: "",
     icerik: [
       { baslik: "Psikodiyalektik Formasyon İleri", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Yüz yüze" },
       { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
@@ -494,6 +493,9 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Psikodiyalektik Kültür İncelemeleri", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", egitmen: "Emine Ayhan", tur: "Hibrit",
         konular: ["Shakespeare"],
       },
+      { baslik: "Dersler" },
+      { baslik: <>Shakespeare ve Psikodiyalektik:<br />Zaman, Mekan, Diyalektik Dönüşüm</>, metin: "Ekim 2026 - Mayıs 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Emine Ayhan", tur: "Hibrit" },
+      { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "Ekim 2026 - Ocak 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Fatih Artvinli", tur: "Hibrit" },
     ],
     sure: "Eylül 2026 – Mayıs 2027",
     kimler: "2. Yılı tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",

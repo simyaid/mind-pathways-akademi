@@ -46,7 +46,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex items-center">
+    <section className="relative overflow-hidden min-h-[90vh] flex items-end">
       {/* Arka plan görseller */}
       <AnimatePresence initial={false}>
         <motion.img
@@ -66,7 +66,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
 
       {/* İçerik */}
-      <div className="container-tight relative z-10 py-32 lg:py-40 flex flex-col items-end pr-0 md:pr-0">
+      <div className="container-tight relative z-10 pt-32 pb-[42px] lg:pt-40 lg:pb-[42px] flex flex-col items-end pr-0 md:pr-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}

@@ -25,7 +25,7 @@ const steps = [
   },
   {
     n: "3. Yıl",
-    title: "Psikodiyalektik Formasyon İleri Kursu",
+    title: "",
     slug: "3-yil",
     text: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder.",
   },
@@ -104,7 +104,7 @@ const Formation = () => (
                 {/* Content side */}
                 <div className={`pl-12 sm:pl-16 lg:pl-0 ${i % 2 === 1 ? "lg:pr-16 lg:order-1" : "lg:pl-16"} lg:col-span-1`}>
                   <div className="bg-card border border-border rounded-lg p-7 lg:p-8 shadow-soft">
-                    <h3 className="font-display text-xl lg:text-2xl font-semibold text-navy-deep">{s.title}</h3>
+                    {s.title && <h3 className="font-display text-xl lg:text-2xl font-semibold text-navy-deep">{s.title}</h3>}
                     <p className="mt-3 text-[0.95rem] leading-relaxed text-muted-foreground">{s.text}</p>
                     <div className="mt-5 flex justify-end">
                       <Link

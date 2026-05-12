@@ -93,7 +93,7 @@ const kurslar: Kurs[] = [
     ],
   },
   {
-    title: "Psikodiyalektik Formasyon İleri",
+    title: "Psikodiyalektik Formasyon İleri Kursu",
     instructor: "Cemal Dindar",
     content: [],
   },
