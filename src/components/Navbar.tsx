@@ -20,7 +20,6 @@ const navItems = [
       { to: "/kurslar/1-yil", label: "1. Yıl — Psikodiyalektik Teori ve Pratik" },
       { to: "/kurslar/2-yil", label: "2. Yıl — Psikodiyalektik Çalışma" },
       { to: "/kurslar/3-yil", label: "3. Yıl — Psikodiyalektik Formasyon İleri Kursu" },
-      { to: "/kurslar/4-yil", label: "4. Yıl — Tamamlayıcı Çalışmalar" },
     ],
   },
   { to: "/ogreticiler", label: "Öğreticiler" },

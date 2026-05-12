@@ -19,7 +19,7 @@ type Kurs = {
   title: ReactNode;
   description: string;
   amac: ReactNode;
-  icerik: { baslik: ReactNode; metin: string; egitmen?: string; tarih?: string; tur?: string; konular?: DersKonu[] }[];
+  icerik: { baslik: ReactNode; metin: string; not?: string; egitmen?: string; tarih?: string; tur?: string; konular?: DersKonu[] }[];
   sure: string;
   kimler: string;
   alinti?: string;
@@ -38,7 +38,7 @@ const kurslar: Record<string, Kurs> = {
     description: "Psikodiyalektik düşüncenin kaynakları olan bilgi türlerine dair bütüncül bir yaklaşım edinmeye yöneliktir. Diyalektik düşünce ve ruhsallık bilgisinin yaşadığımız coğrafyanın dinamikleriyle buluşturulmasını amaçlar.",
     amac: "Psikodiyalektik Formasyona Hazırlık Programı tüm disiplinlerden katılımcılara açıktır.",
     icerik: [
-      { baslik: "Psikodiyalektik Düşünceye Giriş", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül 2026", tur: "Yüz yüze",
+      { baslik: "Psikodiyalektik Düşünceye Giriş Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül 2026", tur: "Yüz yüze",
         konular: [
           "Ruhsallık kavramı üzerine",
           "Diyalektik düşünmenin temelleri",
@@ -72,7 +72,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "Video Dersler — 25 Eylül - 3 Aralık 2026", metin: "" },
+      { baslik: "Video Dersler — 1. Dönem — 25 Eylül - 3 Aralık 2026", metin: "" },
 
       { baslik: "İnsanın Arkeolojisi", metin: "", egitmen: "İsmail Gezgin",
         konular: ["Konuşan/anlatan insan", "Kimlik sorunu ve inşası", "Sanat hangi ihtiyacın karşılığı?", "Uygarlık, inanç ve arkeoloji"],
@@ -102,26 +102,29 @@ const kurslar: Record<string, Kurs> = {
         konular: ["Derin yoksulluk halleri"],
       },
 
-      { baslik: "Öğreticilerle Buluşma ve Atölyeler (4-5-6 Aralık 2026)", metin: "", tur: "Yüz yüze",
+      { baslik: "Öğreticilerle Buluşma ve Atölyeler (4-5-6 Aralık 2026)" },
+      { baslik: "4 Aralık 2026 Cuma", metin: "", tur: "Yüz yüze",
         konular: [
-          { grup: "4 Aralık 2026 Cuma", maddeler: [
-            "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
-            "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
-            "16.30-19.00: Ruh Sağlığı Tarihi Atölyesi / Fatih Artvinli",
-          ]},
-          { grup: "5 Aralık 2026 Cumartesi", maddeler: [
-            "10.00-12.30: Nöropsikanaliz Atölyesi / Hakan Atalay",
-            "13.30-16.00: Psikomitoloji Atölyesi / M. Bilgin Saydam",
-            "16.30-19.00: Sınıf Deneyimlerinin Ruhsal Dinamikleri Atölyesi / Hakan Koçak",
-          ]},
-          { grup: "6 Aralık 2026 Pazar", maddeler: [
-            "11.00-13.30: Yoksulluk ve Ruhsallık / Hacer Foggo",
-            "14.30-17.00: Lacan Düşüncesi / Zehra Eryörük",
-          ]},
+          "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
+          "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
+          "16.30-19.00: Ruh Sağlığı Tarihi Atölyesi / Fatih Artvinli",
+        ],
+      },
+      { baslik: "5 Aralık 2026 Cumartesi", metin: "", tur: "Yüz yüze",
+        konular: [
+          "10.00-12.30: Nöropsikanaliz Atölyesi / Hakan Atalay",
+          "13.30-16.00: Psikomitoloji Atölyesi / M. Bilgin Saydam",
+          "16.30-19.00: Sınıf Deneyimlerinin Ruhsal Dinamikleri Atölyesi / Hakan Koçak",
+        ],
+      },
+      { baslik: "6 Aralık 2026 Pazar", metin: "", tur: "Yüz yüze",
+        konular: [
+          "11.00-13.30: Yoksulluk ve Ruhsallık / Hacer Foggo",
+          "14.30-17.00: Lacan Düşüncesi / Zehra Eryörük",
         ],
       },
 
-      { baslik: "11 Aralık 2026 - 28 Şubat 2027", metin: "" },
+      { baslik: "25 Eylül 2026 - 21 Mayıs 2027", metin: "" },
 
       { baslik: "Psikodiyalektik Düşüncenin Kaynakları", metin: "11 Aralık 2026 - 19 Şubat 2027 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
         konular: [
@@ -134,7 +137,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "Video Dersler — 11 Aralık 2026 - 25 Şubat 2027", metin: "" },
+      { baslik: "Video Dersler — 2. Dönem — 11 Aralık 2026 - 25 Şubat 2027", metin: "" },
 
       { baslik: "İnsanın Arkeolojisi", metin: "", egitmen: "İsmail Gezgin",
         konular: ["Uygarlık ve ilerleme paradoksu", "Kimlik ve sabitlik"],
@@ -198,7 +201,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "Video Dersler — 5 Mart - 27 Mayıs 2027", metin: "" },
+      { baslik: "Video Dersler — 3. Dönem — 5 Mart - 27 Mayıs 2027", metin: "" },
 
       { baslik: "İnsanın Arkeolojisi", metin: "", egitmen: "İsmail Gezgin",
         konular: ["Maddi kültür ve okuma sorunu", "Ekmeğin dikte ettiği yaşam"],
@@ -245,11 +248,11 @@ const kurslar: Record<string, Kurs> = {
   "1-yil": {
     modul: "1. Yıl",
     title: <>Psikodiyalektik<br />Teori ve Pratik</>,
-    description: "Psikodiyalektik yaklaşımın teorik temellerini ve uygulama pratiklerini bir araya getirerek katılımcının ruhsallık, birey ve toplumsallık arasındaki ilişkileri derinlemesine kavramasını hedefler.",
-    amac: "Bireysel çalışmadan grup süreçlerine uzanan bu bütünsel yapı, düşünceyi deneyimle buluşturarak gerçek bir dönüşüm alanı açar. Katılımcılar bu yılda psikodiyalektik düşüncenin temel kavramlarını öğrenir ve bunları pratik bağlamlarda uygulamaya başlar.",
+    description: "",
+    amac: "",
     icerik: [
       {
-        baslik: "Psikodiyalektik Düşünceye Giriş", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül", tur: "Yüz yüze",
+        baslik: "Psikodiyalektik Düşünceye Giriş Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "18-19-20 Eylül", tur: "Yüz yüze",
         konular: [
           "Ruhsallık Kavramı Üzerine",
           "Diyalektik Düşünmenin Temelleri",
@@ -262,14 +265,14 @@ const kurslar: Record<string, Kurs> = {
           { grup: "PSİKODİYALEKTİK ÇALIŞMANIN TEMEL UĞRAKLARI", maddeler: ["Öngörüşme", "Psikodiyalektik Bireysel Çalışma", "Psikodiyalektik Küçük Grup Çalışması", "Psikodiyalektik Büyük Grup Çalışması"] },
         ],
       },
-      { baslik: "Psikoterapinin Temel İlkeleri", metin: "", egitmen: "Yunus Emre Aydın", tarih: "16-17-18 Ekim", tur: "Yüz yüze",
+      { baslik: "Psikoterapinin Temel İlkeleri Kursu", metin: "", egitmen: "Yunus Emre Aydın", tarih: "16-17-18 Ekim", tur: "Yüz yüze",
         konular: [
           { grup: "16 Ekim\n15:00 - 19:00", maddeler: ["İlk Görüşme", "Çerçeve ve Etik İlkeler"] },
           { grup: "17 Ekim\n11:00 - 19:00", maddeler: ["Terapötik İşbirliği", "Psikanalitik Dinleme", "Olgu Çalışması"] },
           { grup: "18 Ekim\n11:00 - 19:00", maddeler: ["İçgörü ve Değişim", "Aktarım", "Karşı Aktarım", "Direnç ve Olumsuz Terapötik Tepki", "Derinlemesine Çalışma", "Olgu Sunumu"] },
         ],
       },
-      { baslik: "Psikodiyalektik Çalışma Başlangıç", metin: "", egitmen: "Cemal Dindar", tarih: "8-9-10 Ocak", tur: "Yüz yüze",
+      { baslik: "Psikodiyalektik Çalışma Başlangıç Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "8-9-10 Ocak", tur: "Yüz yüze",
         konular: [
           "Psikodiyalektik Çalışma ve Gelişim",
           "Psikodiyalektik Çalışma: Teori ve Pratik",
@@ -288,7 +291,7 @@ const kurslar: Record<string, Kurs> = {
           "Psikodiyalektik Süreçte Deneyimden Öğrenmek",
         ],
       },
-      { baslik: "Psikodiyalektik Çalışmanın İlkeleri", metin: "", egitmen: "Cemal Dindar", tarih: "9-10-11 Nisan", tur: "Yüz yüze",
+      { baslik: "Psikodiyalektik Çalışmanın İlkeleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "9-10-11 Nisan", tur: "Yüz yüze",
         konular: [
           { grup: "Bireysel çalışmada ilkeler", maddeler: [
             "Ruhsal Çalışma: Çalışmanın Mobiusu",
@@ -314,7 +317,7 @@ const kurslar: Record<string, Kurs> = {
           ]},
         ],
       },
-      { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Yüz yüze",
+      { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Yüz yüze",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
           "Psikozlar: Belirtiler ve Ayırıcı Tanı",
@@ -375,10 +378,10 @@ const kurslar: Record<string, Kurs> = {
   "2-yil": {
     modul: "2. Yıl",
     title: "Psikodiyalektik Çalışma",
-    description: "Psikodiyalektik düşünce bu aşamada yalnızca öğrenilmez, doğrudan çalışma içinde uygulanır.",
+    description: "",
     amac: "",
     icerik: [
-      { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
+      { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
           "Psikozlar: Belirtiler ve Ayırıcı Tanı",
@@ -388,7 +391,7 @@ const kurslar: Record<string, Kurs> = {
           "Genel Tıbbi Duruma Bağlı Psikiyatrik Tablolar",
         ],
       },
-      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "14 - 15 Kasım", tur: "Hibrit",
+      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler Kursu</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "14 - 15 Kasım", tur: "Hibrit",
         konular: [
           "Sándor Ferenczi",
           "José Bleger, Heinrich Racker, Enrique Pichon-Rivière",
@@ -401,7 +404,7 @@ const kurslar: Record<string, Kurs> = {
           "Sabina Spielrein",
         ],
       },
-      { baslik: "Bağlanma - Travma - Utanç", metin: "", egitmen: "İshak Sayğılı", tarih: "14-15 Kasım", tur: "Hibrit",
+      { baslik: "Bağlanma - Travma - Utanç Kursu", metin: "", egitmen: "İshak Sayğılı", tarih: "20 - 21 Şubat", tur: "Hibrit",
         konular: [
           "John Bowlby ve Bağlanma Kuramı'nı Yeniden Psikanalizin İçinden Düşünmek",
           "Sadizm ve Mazoşizmin Ruhsal Güzergahları Üzerine (Psikanalitik Güdü Kuramının Tanıtımı)",
@@ -411,8 +414,8 @@ const kurslar: Record<string, Kurs> = {
           "Utancın Ruhsal Güzergahları (Amati Sas'ın Utanç ve Travma Kuramı Üzerine)",
         ],
       },
-      { baslik: "Psikodiyalektik Formasyon İleri", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüz yüze" },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüz yüze" },
+      { baslik: "Psikodiyalektik Kültür Çalışmaları Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     dersler: [
       {
@@ -452,12 +455,12 @@ const kurslar: Record<string, Kurs> = {
   },
   "3-yil": {
     modul: "3. Yıl",
-    title: "",
+    title: "Psikodiyalektik Araştırmalar",
     description: "",
     amac: "",
     icerik: [
-      { baslik: "Psikodiyalektik Formasyon İleri", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Yüz yüze" },
-      { baslik: "Temel Psikopatoloji", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
+      { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "3-4-5 Temmuz", tur: "Yüz yüze" },
+      { baslik: "Temel Psikopatoloji Kursu", metin: "", egitmen: "Cem Atbaşoğlu - Timuçin Oral", tarih: "6-7 Şubat", tur: "Hibrit",
         konular: [
           "Hekim Kimliği, Psikiyatrinin İş Tanımı, Genel Tıpta Psikiyatrik Semptomlar",
           "Psikozlar: Belirtiler ve Ayırıcı Tanı",
@@ -467,7 +470,7 @@ const kurslar: Record<string, Kurs> = {
           "Genel Tıbbi Duruma Bağlı Psikiyatrik Tablolar",
         ],
       },
-      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "14 - 15 Kasım", tur: "Hibrit",
+      { baslik: <>Merkezin Dışındaki Sesler: Psikanalizde Dilsel<br />Hegemonya ve Görmezden Gelinen Öncüler Kursu</>, metin: "", egitmen: "Ahmet Kilisli", tarih: "14 - 15 Kasım", tur: "Hibrit",
         konular: [
           "Sándor Ferenczi",
           "José Bleger, Heinrich Racker, Enrique Pichon-Rivière",
@@ -480,7 +483,7 @@ const kurslar: Record<string, Kurs> = {
           "Sabina Spielrein",
         ],
       },
-      { baslik: "Bağlanma - Travma - Utanç", metin: "", egitmen: "İshak Sayğılı", tarih: "14-15 Kasım", tur: "Hibrit",
+      { baslik: "Bağlanma - Travma - Utanç Kursu", metin: "", egitmen: "İshak Sayğılı", tarih: "20 - 21 Şubat", tur: "Hibrit",
         konular: [
           "John Bowlby ve Bağlanma Kuramı'nı Yeniden Psikanalizin İçinden Düşünmek",
           "Sadizm ve Mazoşizmin Ruhsal Güzergahları Üzerine (Psikanalitik Güdü Kuramının Tanıtımı)",
@@ -490,33 +493,20 @@ const kurslar: Record<string, Kurs> = {
           "Utancın Ruhsal Güzergahları (Amati Sas'ın Utanç ve Travma Kuramı Üzerine)",
         ],
       },
-      { baslik: "Psikodiyalektik Kültür İncelemeleri", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", egitmen: "Emine Ayhan", tur: "Hibrit",
+      { baslik: "Psikodiyalektik Kültür İncelemeleri Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", egitmen: "Emine Ayhan", tur: "Hibrit",
         konular: ["Shakespeare"],
       },
       { baslik: "Dersler" },
       { baslik: <>Shakespeare ve Psikodiyalektik:<br />Zaman, Mekan, Diyalektik Dönüşüm</>, metin: "Ekim 2026 - Mayıs 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Emine Ayhan", tur: "Hibrit" },
       { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "Ekim 2026 - Ocak 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Fatih Artvinli", tur: "Hibrit" },
+      { baslik: "Tamamlayıcı Çalışmalar", not: "(Akademi Psikodiyalektik formasyon programı için tamamlayıcı çalışmalara katılım zorunlu değildir.)" },
+      { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Kültür Çalışmaları Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     sure: "Eylül 2026 – Mayıs 2027",
     kimler: "2. Yılı tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",
     alinti: "\"İleri gitmek; daha fazla bilmek değil, daha derinden anlamaktır.\"",
-  },
-  "4-yil": {
-    modul: "4. Yıl",
-    title: "Tamamlayıcı Çalışmalar",
-    description: "",
-    amac: <>
-      <p className="italic">(Akademi Psikodiyalektik formasyon programı için tamamlayıcı çalışmalara katılım zorunlu değildir.)</p>
-    </>,
-    icerik: [
-      { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
-      { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
-    ],
-    sure: "Eylül 2026 – Mayıs 2027",
-    kimler: "Formasyon sürecini tamamlamış ve psikodiyalektik çalışmayı yaşam boyu bir pratik olarak benimsemek isteyen bireyler için tasarlanmıştır.",
-    alinti: "\"Tamamlamak bir son değil; yeni bir başlangıcın zeminidir.\"",
-    icerikBaslik: "Dersler",
   },
   "4-modul": {
     modul: "4. Yıl",
@@ -530,7 +520,7 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
       { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
       { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "", egitmen: "Fatih Artvinli", tur: "Hibrit" },
-      { baslik: "Psikodiyalektik Kültür İncelemeleri", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", tur: "Hibrit",
+      { baslik: "Psikodiyalektik Kültür İncelemeleri Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", tur: "Hibrit",
         konular: ["Shakespeare", "Dostoyevski"],
       },
     ],
@@ -609,6 +599,7 @@ const KursDetay = () => {
                       <div key={i} className="pt-8 pb-1">
                         <p className="text-[14px] font-bold uppercase tracking-[0.18em] text-navy-500 mb-2">{item.baslik}</p>
                         <div className="h-px bg-border" />
+                        {item.not && <p className="mt-3 text-sm italic text-muted-foreground">{item.not}</p>}
                       </div>
                     );
                   }

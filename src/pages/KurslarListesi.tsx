@@ -19,7 +19,7 @@ type Kurs = {
 
 const kurslar: Kurs[] = [
   {
-    title: "Psikodiyalektik Düşünceye Giriş",
+    title: "Psikodiyalektik Düşünceye Giriş Kursu",
     instructor: "Cemal Dindar",
     content: [
       { kind: "items", values: ["Ruhsallık kavramı üzerine", "Diyalektik düşünmenin temelleri", "Canlılık – ruhsallık – toplumsallık", "Tarihsel ve güncel çerçeve"] },
@@ -37,7 +37,7 @@ const kurslar: Kurs[] = [
     ],
   },
   {
-    title: "Psikodiyalektik Çalışma Başlangıç",
+    title: "Psikodiyalektik Çalışma Başlangıç Kursu",
     instructor: "Cemal Dindar",
     content: [
       { kind: "items", values: [
@@ -60,7 +60,7 @@ const kurslar: Kurs[] = [
     ],
   },
   {
-    title: "Psikodiyalektik Çalışmanın İlkeleri",
+    title: "Psikodiyalektik Çalışmanın İlkeleri Kursu",
     instructor: "Cemal Dindar",
     content: [
       { kind: "header", value: "Bireysel Çalışmada İlkeler" },
@@ -98,7 +98,7 @@ const kurslar: Kurs[] = [
     content: [],
   },
   {
-    title: "Psikoterapinin Temel İlkeleri",
+    title: "Psikoterapinin Temel İlkeleri Kursu",
     instructor: "Yunus Emre Aydın",
     content: [
       { kind: "items", values: [
@@ -117,7 +117,7 @@ const kurslar: Kurs[] = [
     ],
   },
   {
-    title: "Temel Psikopatoloji",
+    title: "Temel Psikopatoloji Kursu",
     instructor: "Cem Atbaşoğlu – E. Timuçin Oral",
     content: [
       { kind: "text", value: "Bu kursta tıbbi yaklaşım ve psikiyatrinin iş gördüğü alanın tanımlanması, bu alanda birikmiş olan bilgi ve deneyim ile kursa katılanların psikopatolojinin farklı kategorilerini tanılama ve ayırıcı tanı oluşturma becerisinin artırılması amaçlanmaktadır." },
@@ -134,7 +134,7 @@ const kurslar: Kurs[] = [
     ],
   },
   {
-    title: "Merkezin Dışındaki Sesler: Psikanalizde Dilsel Hegemonya ve Görmezden Gelinen Öncüler",
+    title: "Merkezin Dışındaki Sesler: Psikanalizde Dilsel Hegemonya ve Görmezden Gelinen Öncüler Kursu",
     instructor: "Ahmet S. Kilisli",
     content: [
       { kind: "text", value: "Psikanaliz tarihi, sıklıkla Londra, Paris ve Kuzey Amerika ekseninde yazılmış; İngilizce ve Fransızcanın dilsel hakimiyetiyle sınırları çizilmiş yekpare bir anlatı olarak sunulur. Peki, bu katı kurumsal çerçevenin ve dilsel tekelin dışında kalan, ana akım tarafından uzun yıllar görmezden gelinen veya \"periferi\" olarak kodlanan o devasa klinik ve kuramsal üretim alanında neler yaşandı?" },
