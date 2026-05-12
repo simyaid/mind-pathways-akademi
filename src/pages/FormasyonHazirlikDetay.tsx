@@ -410,11 +410,10 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
       { baslik: "Psikodiyalektik Formasyon İleri Kursu", metin: "", egitmen: "Cemal Dindar", tarih: "2-3-4 Temmuz 2027", tur: "Yüz yüze" },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     dersler: [
       {
-        baslik: "Klein Metinleri",
+        baslik: "Yavaş Okuma Çalışması: Klein Metinleri",
         egitmen: "Cemal Dindar",
         tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri saat 10.30-12.00 arasında hibrit yapılacaktır. 'Diyalektik Metin Çalışmaları' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
@@ -497,7 +496,7 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Tamamlayıcı Çalışmalar", not: "(Akademi Psikodiyalektik formasyon programı için tamamlayıcı çalışmalara katılım zorunlu değildir.)" },
       { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
       { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
-      { baslik: "Psikodiyalektik Kültür Çalışmaları Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     sure: "Eylül 2026 – Mayıs 2027",
     kimler: "2. Yılı tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",

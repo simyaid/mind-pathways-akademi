@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, Scale, Sprout, Megaphone, BookOpen } from "lucide-react";
+import { Users, Scale, Sprout, Megaphone } from "lucide-react";
 
 const values = [
   {
@@ -14,18 +14,13 @@ const values = [
   },
   {
     icon: Sprout,
-    title: "Psikodiyalektik Çalışma",
+    title: ["Psikodiyalektik", "Çalışma"],
     text: "Psikodiyalektik çalışmacı olmak ve psikokültür uygulamaları.",
   },
   {
     icon: Megaphone,
     title: "Psikodiyalektik Araştırmalar",
     text: "İleri psikodiyalektik araştırma ve incelemeleri.",
-  },
-  {
-    icon: BookOpen,
-    title: "Tamamlayıcı Çalışmalar",
-    text: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
   },
 ];
 
@@ -36,7 +31,7 @@ export const ValuesSection = () => (
         <span className="eyebrow mb-5">Formasyon Süreci</span>
       </div>
 
-      <div className="grid gap-px bg-border rounded-lg overflow-hidden md:grid-cols-2 lg:grid-cols-5 shadow-soft">
+      <div className="grid gap-px bg-border rounded-lg overflow-hidden md:grid-cols-2 lg:grid-cols-4 shadow-soft">
         {values.map((v, i) => (
           <motion.div
             key={Array.isArray(v.title) ? v.title.join("-") : v.title}
