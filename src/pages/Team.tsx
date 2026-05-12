@@ -38,7 +38,7 @@ export const team = [
     role: "Psikiyatri & Psikodiyalektik",
     initials: "CD",
     photo: cemalDindarPhoto,
-    bio: "Psikiyatrist. Diyalektik düşünce ile psikanaliz arasındaki geçiş alanları, politik psikoloji eleştirisi ve psikiyatri eleştirisi üzerine çalışmalarıyla tanınır. Halk İçin Psikoterapi Derneği'nde psikoterapi hizmetlerinin bir insan hakkı olarak ulaşılabilir hale getirilmesi çabası içindedir.",
+    bio: "Halk İçin Psikoterapi Derneği kurucusu. Ruhsallık bilgilerinin diyalektik düşünülmesi, politik psikoloji ve psikiyatri eleştirisi, psikobiyografi çalışmaları vardır.",
     long: "1994 yılında Cerrahpaşa Tıp Fakültesi İngilizce Bölümü'nde tıp eğitimini bitirdi ve Bakırköy Akıl Hastanesi'nde psikiyatri uzmanlığı eğitimine başladı. Tıp fakültesinde Değirmenlere Karşı dergisini, Bakırköy'de hastalar ve sağlık çalışanlarıyla birlikte hazırlanan Aura dergisini çıkartan grubun içinde yer aldı. 2000 yılında psikiyatri uzmanı oldu. İki yıl Şanlıurfa Devlet Hastanesi'nde çalıştı; bu dönem ruhsallık ve sosyokültürel etkenler arasındaki ilişkilere yoğunlaşan gözlemlerde bulundu. Bu gözlemlerini ilk kitabı olan Yuvasız Kuşlar Gibi / 'Deliliğin Resimli Sivil Tarihi'nde yayınladı.",
     longExtra: "İstanbul'a yerleştikten sonra 'Anadolu ruhsallığı' başlığı altında sosyokültürel etkenlerle ruhsallık ilişkisine dair yazılar yayınladı; politik psikoloji eleştirileri, psikiyatri eleştirisi, diyalektik düşünce ile psikanaliz arasındaki geçiş alanları üzerine çalışmalarını yoğunlaştırdı. Psikodiyalektik Araştırmalar Derneği emekçiliği ve Akıl Defteri dergisinin editörlüğünü yaptı. Halk İçin Psikoterapi Derneği'nde psikoterapi kuramlarının eşitlikçi ilkeyle dönüştürülmesi ve psikoterapi hizmetlerinin bir insan hakkı olarak ulaşılabilir hale getirilmesi çabası yönünde çalışmalarını sürdürmektedir. Dindar'ın yayınlanmış çok sayıda makale ve kitabı vardır.",
     focus: ["Psikodiyalektik", "Diyalektik Düşünce", "Psikiyatri Eleştirisi"],
@@ -283,13 +283,6 @@ const Team = () => {
               </div>
               <div>
                 <h1 className="font-display text-4xl lg:text-5xl text-navy-deep font-medium leading-tight">{member.name}</h1>
-                <div className="flex flex-wrap gap-2 mt-6">
-                  {member.focus.map((f) => (
-                    <span key={f} className="text-xs uppercase tracking-wider px-3 py-1.5 rounded-full border border-navy-deep/15 text-navy-700">
-                      {f}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
