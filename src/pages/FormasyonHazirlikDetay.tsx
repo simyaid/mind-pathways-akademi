@@ -504,23 +504,19 @@ const kurslar: Record<string, Kurs> = {
   "4-yil": {
     modul: "4. Yıl",
     title: "Tamamlayıcı Çalışmalar",
-    description: "Formasyonun ötesine geçmek isteyenler için düşünceyi derinleştiren bir eşlik sunar.",
+    description: "",
     amac: <>
-      <p>Kavram çalışmaları, dil ve edebiyat üzerinden ruhsallık çok katmanlı bir biçimde yeniden düşünülür. Bu yıl, psikodiyalektik formasyonu tamamlamış katılımcılara sürekli bir düşünsel zemin sunar.</p>
       <p className="italic">(Akademi Psikodiyalektik formasyon programı için tamamlayıcı çalışmalara katılım zorunlu değildir.)</p>
     </>,
     icerik: [
       { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
       { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
-      { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "", egitmen: "Fatih Artvinli", tur: "Hibrit" },
-      { baslik: "Psikodiyalektik Kültür İncelemeleri", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", tur: "Hibrit",
-        konular: ["Shakespeare", "Dostoyevski"],
-      },
+      { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     sure: "Eylül 2026 – Mayıs 2027",
     kimler: "Formasyon sürecini tamamlamış ve psikodiyalektik çalışmayı yaşam boyu bir pratik olarak benimsemek isteyen bireyler için tasarlanmıştır.",
     alinti: "\"Tamamlamak bir son değil; yeni bir başlangıcın zeminidir.\"",
-    icerikBaslik: "Çalışmalar",
+    icerikBaslik: "Dersler",
   },
   "4-modul": {
     modul: "4. Yıl",
