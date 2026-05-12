@@ -175,18 +175,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "5 Mart - 30 Mayıs 2027", metin: "" },
 
-      { baslik: "Psikodiyalektik Düşüncenin Kaynakları", metin: "5 Mart - 21 Mayıs 2027 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
-        konular: [
-          { grup: "Diyalektik düşünme temrinleri", maddeler: ["Tekinsizlik'ten ruhsal üçgenleşmeye: prehistorya ve yasa", "Oidipus bütünlüğü", "Birey ruhsallığı - Toplum ruhsallığı", "Kastrasyon ve uygarlık"] },
-        ],
-      },
-      { baslik: "Anadolu Ruhsallığı", metin: "5 Mart - 21 Mayıs 2027 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Psikodiyalektik Düşüncenin Kaynakları' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
-        konular: [
-          { grup: "Kuramsal sonuçlar", maddeler: ["Emek ve oluş: evcilleştirme süreçleri", "Göbeklitepe - Çatalhöyük - Troya: insan ruhsallığının sabitlik ve süreklilikleri", "Birincil süreçler ve üçgenleşme"] },
-        ],
-      },
 
       { baslik: "Video Dersler — 3. Dönem — 5 Mart - 27 Mayıs 2027", metin: "" },
 
