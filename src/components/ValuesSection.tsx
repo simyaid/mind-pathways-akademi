@@ -5,22 +5,22 @@ const values = [
   {
     icon: Users,
     title: ["Formasyona", "Hazırlık"],
-    text: "Ruhsallık, diyalektik düşünce ve psikanalitik kuramın temel kavramlarıyla tanışma.",
+    text: "Ruhsallık bilgileri, insan bilimleri ve diyalektik düşüncenin temel kuramlarını içeren dersler.",
   },
   {
     icon: Scale,
     title: ["Teori ve", "Pratik"],
-    text: "Kuram, olgu ve deneyim bir araya gelir. Psikodiyalektik düşünce, çalışma içinde anlam kazanır.",
+    text: "Psikodiyalektik düşüncenin temel kavramları ve psikodiyalektik çalışmanın ilkeleri.",
   },
   {
     icon: Sprout,
     title: "Psikodiyalektik Çalışma",
-    text: "Bireysel ve grup çalışmalarıyla düşünce pratiğe dönüşür.",
+    text: "Psikodiyalektik çalışmacı olmak ve psikokültür uygulamaları.",
   },
   {
     icon: Megaphone,
-    title: ["İleri", "Aşama"],
-    text: "Kuram, deneyim ve yorum birleşir. Psikodiyalektik yaklaşım kişisel bir kavrayışa dönüşür.",
+    title: "Psikodiyalektik Araştırmalar",
+    text: "İleri psikodiyalektik araştırma ve incelemeleri.",
   },
   {
     icon: BookOpen,

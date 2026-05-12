@@ -315,12 +315,7 @@ const Team = () => {
       <PageHeader
         eyebrow="Öğreticiler"
         title={<>Akademi Psikodiyalektik <br /> Öğreticileri</>}
-        description={
-          <>
-            Akademi'nin eğitmen kadrosu; klinik psikoloji, felsefe, eğitim bilimleri <br />
-            ve sosyal bilimler alanlarında yetkin isimlerden oluşur.
-          </>
-        }
+        description=""
       />
 
       <section className="py-20 lg:py-28">
