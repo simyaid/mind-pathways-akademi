@@ -40,10 +40,6 @@ const About = () => (
         </div>
         <div className="lg:col-span-8 space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
-          Bu çalışmaları  HALK İÇİN PSİKOTERAPİ DERNEĞİ ile emek birliği içinde ve karşılıklı sorumluluk bilinciyle gerçekleştirir. 
-
-          </p>
-          <p>
           HALK İÇİN PSİKOTERAPİ DERNEĞİ’nin temsil ettiği değerlerin ve ilkelerin en somut örneklerinden biri olan psikodiyalektik formasyon süreci ve psikodiyalektik kültür üretimi çabası ile AKADEMİ PSİKODİYALEKTİK ruhsallık alanında yeni bir anlayışın temsilcisidir.
           </p>
         </div>
