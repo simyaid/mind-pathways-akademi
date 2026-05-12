@@ -20,6 +20,9 @@ import timucinOralPhoto from "@/assets/Kadro/TimuçinOral.png";
 import yunusEmreAydinPhoto from "@/assets/Kadro/YunusEmreAydin.png";
 import zehraEryorukPhoto from "@/assets/Kadro/ZehraEryoruk.png";
 import berilBayrakPhoto from "@/assets/Kadro/Beril.jpeg";
+import emineAyhanPhoto from "@/assets/Kadro/Emine.png";
+import ishakSaygiliPhoto from "@/assets/Kadro/İshak.png";
+import gokselAymazPhoto from "@/assets/Kadro/Göksel.png";
 
 export const team = [
   {
@@ -32,17 +35,6 @@ export const team = [
     long: "Psikiyatr ve psikoterapist. İstanbul Tıp Fakültesi 1980 mezunudur. Zürih Üniversitesi'nde nörofizyoloji alanındaki doktora çalışmasının ardından, Ruh Sağlığı ve Hastalıkları uzmanlık eğitimini İsviçre'de tamamladı. 1989'dan bu yana İstanbul Üniversitesi İstanbul Tıp Fakültesi Psikiyatri Anabilim Dalı öğretim üyesidir.",
     longExtra: "İlgi ve çalışma alanını 'psikomitoloji' şemsiyesi altında psikodinamik psikoterapiler, psikoterapi felsefesi ile kişilik örgütlenme ve bozuklukları oluşturmaktadır. İstanbul Psikomitoloji Çalışma Grubu'nun (www.psikomitoloji.com) kurucusudur.",
     focus: ["Psikodinamik Psikoterapi", "Psikomitoloji", "Kişilik Bozuklukları"],
-  },
-  {
-    slug: "cemal-dindar",
-    name: "Cemal Dindar",
-    role: "Psikiyatri & Psikodiyalektik",
-    initials: "CD",
-    photo: cemalDindarPhoto,
-    bio: "Halk İçin Psikoterapi Derneği kurucusu. Ruhsallık bilgilerinin diyalektik düşünülmesi, politik psikoloji ve psikiyatri eleştirisi, psikobiyografi çalışmaları vardır.",
-    long: "1994 yılında Cerrahpaşa Tıp Fakültesi İngilizce Bölümü'nde tıp eğitimini bitirdi ve Bakırköy Akıl Hastanesi'nde psikiyatri uzmanlığı eğitimine başladı. Tıp fakültesinde Değirmenlere Karşı dergisini, Bakırköy'de hastalar ve sağlık çalışanlarıyla birlikte hazırlanan Aura dergisini çıkartan grubun içinde yer aldı. 2000 yılında psikiyatri uzmanı oldu. İki yıl Şanlıurfa Devlet Hastanesi'nde çalıştı; bu dönem ruhsallık ve sosyokültürel etkenler arasındaki ilişkilere yoğunlaşan gözlemlerde bulundu. Bu gözlemlerini ilk kitabı olan Yuvasız Kuşlar Gibi / 'Deliliğin Resimli Sivil Tarihi'nde yayınladı.",
-    longExtra: "İstanbul'a yerleştikten sonra 'Anadolu ruhsallığı' başlığı altında sosyokültürel etkenlerle ruhsallık ilişkisine dair yazılar yayınladı; politik psikoloji eleştirileri, psikiyatri eleştirisi, diyalektik düşünce ile psikanaliz arasındaki geçiş alanları üzerine çalışmalarını yoğunlaştırdı. Psikodiyalektik Araştırmalar Derneği emekçiliği ve Akıl Defteri dergisinin editörlüğünü yaptı. Halk İçin Psikoterapi Derneği'nde psikoterapi kuramlarının eşitlikçi ilkeyle dönüştürülmesi ve psikoterapi hizmetlerinin bir insan hakkı olarak ulaşılabilir hale getirilmesi çabası yönünde çalışmalarını sürdürmektedir. Dindar'ın yayınlanmış çok sayıda makale ve kitabı vardır.",
-    focus: ["Psikodiyalektik", "Diyalektik Düşünce", "Psikiyatri Eleştirisi"],
   },
   {
     slug: "fatih-artvinli",
@@ -60,6 +52,7 @@ export const team = [
     name: "Göksel Aymaz",
     role: "Sosyal Antropoloji & İletişim",
     initials: "GA",
+    photo: gokselAymazPhoto,
     bio: "Marmara Üniversitesi İletişim Fakültesi'nde öğretim üyesi. Sanat, politika ve kültür sosyolojisi ile toplumsal kuram üzerine yazılar yazmaktadır.",
     long: "Marmara Üniversitesi İletişim Fakültesi'nde öğretim üyesi. İstanbul Üniversitesi'nde Sosyal Antropoloji okudu (1993). Basın sektöründe bir süre editör ve yayın yönetmeni olarak çalıştı.",
     longExtra: "Çeşitli dergi ve gazetelerde sanat, politika ve kültür sosyolojisi ile toplumsal kuram üzerine yazılar yazdı.",
@@ -224,6 +217,7 @@ export const team = [
     name: "Emine Ayhan",
     role: "Psikodiyalektik Kültür Çalışmaları",
     initials: "EA",
+    photo: emineAyhanPhoto,
     bio: "Psikodiyalektik kültür incelemeleri alanında çalışmalarını sürdürmektedir.",
     long: "Psikodiyalektik kültür incelemeleri alanında çalışmalarını sürdürmektedir.",
     longExtra: "",
@@ -234,6 +228,7 @@ export const team = [
     name: "İshak Sayğılı",
     role: "Psikanaliz & Travma",
     initials: "İS",
+    photo: ishakSaygiliPhoto,
     bio: "Bağlanma kuramı, travma ve psikanaliz üzerine çalışmaktadır.",
     long: "Bağlanma kuramı, travma ve psikanaliz üzerine çalışmaktadır.",
     longExtra: "",
@@ -249,6 +244,17 @@ export const team = [
     long: "1984 yılında Uludağ Üniversitesi Tıp Fakültesi'ni bitirdikten sonra Şavşat ve Arhavi'de pratisyen hekim olarak çalıştı. 1986 yılında ihtisasa başladığı Bakırköy Ruh ve Sinir Hastalıkları Hastanesi'nde 1990'da Psikiyatri Uzmanı, 1995'te Doçent oldu; 2005–2008 yılları arasında klinik şefi olarak görev yaptı. 2003 yılında hastanenin Raşit Tahsin Duygudurum Merkezi'ni kurdu ve 2009'da emekli olup ayrılana dek yöneticiliğini sürdürdü. 2000–2002'de Yeditepe Üniversitesi Tıp ve Diş Hekimliği Fakültelerinde Psikiyatri dersleri verdi. 2009–2015 yılları arasında İstanbul Ticaret Üniversitesi Psikoloji Bölümü'nde çalıştı; aynı dönemde Boğaziçi Üniversitesi Klinik Psikoloji Doktora programında Psikofarmakoloji dersleri verdi. 2013 yılında profesörlüğe yükseltildi.",
     longExtra: "Ulusal ve uluslararası dergilerde çok sayıda makalesi, sekiz kitap bölümü, editörlüğünü yaptığı iki kitap ve eş yazarı olduğu Duygudurum Bozuklukları adlı kitabı bulunmaktadır. İstanbul Tabip Odası Onur Kurulu ile Türkiye Psikiyatri Derneği'nin merkez ve şube kurullarında üyelik, 2016–2018 yıllarında TPD genel başkanlığı yaptı. Tıbbi Hipnoz ve Bipolar Bozukluklar derneklerinin kurucu üyeleri arasındadır. Açık Radyo'da Engin Geçtan ile 'Dünya Hali' ve Şenol Ayla ile 'Sanat Uzun İlham Sonsuz' programlarını yaptı. 2024 yılı sonunda 40. mesleki yılını tamamlayarak aktif hekimliği bıraktı. Halen Apaçık Radyo'da 'Sanat Uzun İlham Sonsuz' ve 'Dikensiz Gül Bahçesi Vadetmedik' podcast'lerini sürdürmektedir.",
     focus: ["Duygudurum Bozuklukları", "Psikiyatri", "Sanat & Psikopatoloji"],
+  },
+  {
+    slug: "cemal-dindar",
+    name: "Cemal Dindar",
+    role: "Psikiyatri & Psikodiyalektik",
+    initials: "CD",
+    photo: cemalDindarPhoto,
+    bio: "Halk İçin Psikoterapi Derneği kurucusu. Ruhsallık bilgilerinin diyalektik düşünülmesi, politik psikoloji ve psikiyatri eleştirisi, psikobiyografi çalışmaları vardır.",
+    long: "1994 yılında Cerrahpaşa Tıp Fakültesi İngilizce Bölümü'nde tıp eğitimini bitirdi ve Bakırköy Akıl Hastanesi'nde psikiyatri uzmanlığı eğitimine başladı. Tıp fakültesinde Değirmenlere Karşı dergisini, Bakırköy'de hastalar ve sağlık çalışanlarıyla birlikte hazırlanan Aura dergisini çıkartan grubun içinde yer aldı. 2000 yılında psikiyatri uzmanı oldu. İki yıl Şanlıurfa Devlet Hastanesi'nde çalıştı; bu dönem ruhsallık ve sosyokültürel etkenler arasındaki ilişkilere yoğunlaşan gözlemlerde bulundu. Bu gözlemlerini ilk kitabı olan Yuvasız Kuşlar Gibi / 'Deliliğin Resimli Sivil Tarihi'nde yayınladı.",
+    longExtra: "İstanbul'a yerleştikten sonra 'Anadolu ruhsallığı' başlığı altında sosyokültürel etkenlerle ruhsallık ilişkisine dair yazılar yayınladı; politik psikoloji eleştirileri, psikiyatri eleştirisi, diyalektik düşünce ile psikanaliz arasındaki geçiş alanları üzerine çalışmalarını yoğunlaştırdı. Psikodiyalektik Araştırmalar Derneği emekçiliği ve Akıl Defteri dergisinin editörlüğünü yaptı. Halk İçin Psikoterapi Derneği'nde psikoterapi kuramlarının eşitlikçi ilkeyle dönüştürülmesi ve psikoterapi hizmetlerinin bir insan hakkı olarak ulaşılabilir hale getirilmesi çabası yönünde çalışmalarını sürdürmektedir. Dindar'ın yayınlanmış çok sayıda makale ve kitabı vardır.",
+    focus: ["Psikodiyalektik", "Diyalektik Düşünce", "Psikiyatri Eleştirisi"],
   },
 ];
 

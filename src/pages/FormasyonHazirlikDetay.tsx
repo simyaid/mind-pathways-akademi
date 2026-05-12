@@ -4,7 +4,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { ArrowLeft, Info } from "lucide-react";
 import { ReactNode } from "react";
 
-type DersKonu = string | { grup: string; maddeler: string[] };
+type DersKonu = string | { grup: string; maddeler: string[] } | { aciklama: string };
 
 type Ders = {
   baslik: string;
@@ -54,7 +54,7 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "25 Eylül - 6 Aralık 2026", metin: "" },
+      { baslik: "25 Eylül 2026 - 21 Mayıs 2027", metin: "" },
 
       { baslik: "Psikodiyalektik Düşüncenin Kaynakları", metin: "25 Eylül 2026 - 27 Kasım 2026 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
         konular: [
@@ -95,9 +95,6 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Nöropsikanaliz", metin: "", egitmen: "Hakan Atalay",
         konular: ["Kısa sinirbilim", "Kısa psikanaliz", "Kısa nöropsikanaliz"],
       },
-      { baslik: "Lacan Düşüncesi", metin: "", egitmen: "Zehra Eryörük",
-        konular: ["Lacan düşüncesinin gelişimi"],
-      },
       { baslik: "Yoksulluk ve Ruhsallık", metin: "", egitmen: "Hacer Foggo",
         konular: ["Derin yoksulluk halleri"],
       },
@@ -107,7 +104,7 @@ const kurslar: Record<string, Kurs> = {
         konular: [
           "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
           "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
-          "16.30-19.00: Ruh Sağlığı Tarihi Atölyesi / Fatih Artvinli",
+          "16.30-19.00: Yoksulluk ve Ruhsallık / Hacer Foggo",
         ],
       },
       { baslik: "5 Aralık 2026 Cumartesi", metin: "", tur: "Yüz yüze",
@@ -119,21 +116,8 @@ const kurslar: Record<string, Kurs> = {
       },
       { baslik: "6 Aralık 2026 Pazar", metin: "", tur: "Yüz yüze",
         konular: [
-          "11.00-13.30: Yoksulluk ve Ruhsallık / Hacer Foggo",
-          "14.30-17.00: Lacan Düşüncesi / Zehra Eryörük",
-        ],
-      },
-
-      { baslik: "25 Eylül 2026 - 21 Mayıs 2027", metin: "" },
-
-      { baslik: "Psikodiyalektik Düşüncenin Kaynakları", metin: "11 Aralık 2026 - 19 Şubat 2027 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
-        konular: [
-          { grup: "Psikanaliz ve diyalektik", maddeler: ["Bilinç - BilinçsizOlan", "Tekinsizlik ve duyusal eminlik", "Temel acizlik, tümgüçlülük, tümbilirlik", "O - Ben - Üstben", "Ben Ülküsü - üstben diyalektiği", "Rüya - yanılsama - gerçeklik"] },
-        ],
-      },
-      { baslik: "Anadolu Ruhsallığı", metin: "11 Aralık 2026 - 19 Şubat 2027 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Psikodiyalektik Düşüncenin Kaynakları' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
-        konular: [
-          { grup: "Temel karşıtlıklar ve birliği", maddeler: ["Anacıllık ve ataerkillik", "Kan bağı ve yer bağı", "Göçebe ve yerleşik", "Acı (ve) dirlik", "Şaman ve rahip kişilikleri"] },
+          "11.00-13.30: Ruh Sağlığı Tarihi Atölyesi / Fatih Artvinli",
+          "14.30-17.00: Türkçenin Ruh Hali: Edebiyat Aynasında Ruhsallık Atölyesi / Fatih Artvinli",
         ],
       },
 
@@ -157,8 +141,8 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Narsisizm, Oidipus ve Ötesi", metin: "", egitmen: "Hakan Kızıltan",
         konular: ["Narsisizm", "Oidipus"],
       },
-      { baslik: "Ruh Sağlığı Tarihi", metin: "", egitmen: "Fatih Artvinli",
-        konular: ["Türkiye'de ruh sağlığının kurumsallaşma süreci"],
+      { baslik: "Bebek Ruhsallığı: Başlangıçlara Dair", metin: "", egitmen: "Beril Bayrak",
+        konular: ["Bebek ruhsallığına dair tarihsel ve güncel bakışlar", "Bebeğin bildiği - Yetişkinin unuttuğu"],
       },
       { baslik: "Dil, İletişim, Ruhsallık", metin: "", egitmen: "Nehir Durna",
         konular: [
@@ -169,22 +153,25 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
 
-      { baslik: "Öğreticilerle Buluşma ve Atölyeler (26-27-28 Şubat 2027)", metin: "", tur: "Yüz yüze",
+      { baslik: "Öğreticilerle Buluşma ve Atölyeler (26-27-28 Şubat 2027)" },
+      { baslik: "26 Şubat 2027 Cuma", metin: "", tur: "Yüz yüze",
         konular: [
-          { grup: "26 Şubat 2027 Cuma", maddeler: [
-            "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
-            "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
-            "16.30-19.00: Ruh Sağlığı Tarihi Atölyesi / Fatih Artvinli",
-          ]},
-          { grup: "27 Şubat 2027 Cumartesi", maddeler: [
-            "10.00-12.30: Nöropsikanaliz Atölyesi / Hakan Atalay",
-            "13.30-16.00: Psikomitoloji Atölyesi / M. Bilgin Saydam",
-            "16.30-19.00: Sınıf Deneyimlerinin Ruhsal Dinamikleri Atölyesi / Hakan Koçak",
-          ]},
-          { grup: "28 Şubat 2027 Pazar", maddeler: [
-            "11.00-13.30: Dil, İletişim, Ruhsallık Atölyesi / Nehir Durna",
-            "14.30-17.00: Narsisizm, Oidipus ve Ötesi / Hakan Kızıltan",
-          ]},
+          "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
+          "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
+          "16.30-19.00: Bebek Ruhsallığı: Başlangıçlara Dair / Beril Bayrak",
+        ],
+      },
+      { baslik: "27 Şubat 2027 Cumartesi", metin: "", tur: "Yüz yüze",
+        konular: [
+          "10.00-12.30: Nöropsikanaliz Atölyesi / Hakan Atalay",
+          "13.30-16.00: Psikomitoloji Atölyesi / M. Bilgin Saydam",
+          "16.30-19.00: Sınıf Deneyimlerinin Ruhsal Dinamikleri Atölyesi / Hakan Koçak",
+        ],
+      },
+      { baslik: "28 Şubat 2027 Pazar", metin: "", tur: "Yüz yüze",
+        konular: [
+          "11.00-13.30: Dil, İletişim, Ruhsallık Atölyesi / Nehir Durna",
+          "14.30-17.00: Narsisizm, Oidipus ve Ötesi / Hakan Kızıltan",
         ],
       },
 
@@ -219,24 +206,32 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Tragedyalar: Kahraman-Kurban Ruhsallığı", metin: "", egitmen: "Semih Çelenk",
         konular: ["Kral Oidipus", "Medea ve Antigone", "Hamlet"],
       },
+      { baslik: "Lacan Düşüncesi", metin: "", egitmen: "Zehra Eryörük",
+        konular: ["Lacan düşüncesinin gelişimi"],
+      },
 
-      { baslik: "Öğreticilerle Buluşma ve Atölyeler (28-29-30 Mayıs 2027)", metin: "", tur: "Yüz yüze",
+      { baslik: "Öğreticilerle Buluşma ve Atölyeler (28-29-30 Mayıs 2027)" },
+      { baslik: "28 Mayıs 2027 Cuma", metin: "", tur: "Yüz yüze",
         konular: [
-          { grup: "28 Mayıs 2027 Cuma", maddeler: [
-            "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
-            "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
-            "16.30-19.00: Ruh Sağlığı Tarihi Atölyesi / Fatih Artvinli",
-          ]},
-          { grup: "29 Mayıs 2027 Cumartesi", maddeler: [
-            "10.00-12.30: Tragedyalar: Kahraman-Kurban Ruhsallığı / Semih Çelenk",
-            "13.30-16.00: Psikomitoloji Atölyesi / M. Bilgin Saydam",
-            "16.30-19.00: Sınıf Deneyimlerinin Ruhsal Dinamikleri Atölyesi / Hakan Koçak",
-          ]},
-          { grup: "30 Mayıs 2027 Pazar", maddeler: [
-            "11.00-12.30: Toplumsal Cinsiyet ve Dil / Nehir Durna",
-            "12.30-14.00: Toplumsal Cinsiyet ve Uygarlığın Huzursuzluğu / Cemal Dindar",
-            "15.00-18.00: Toplumsal Cinsiyet Atölyesi / Nehir Durna - Cemal Dindar",
-          ]},
+          "10.00-12.30: İnsanın Arkeolojisi Atölyesi / İsmail Gezgin",
+          "13.30-16.00: Sosyal Teoride İnsan ve Toplum Atölyesi / Göksel Aymaz",
+          "16.30-19.00: Lacan Düşüncesi / Zehra Eryörük",
+          { aciklama: "Öznenin bölünmüşlüğü ve arzunun diyalektiği" },
+          { aciklama: "Kapitalizmin huzursuzluğu ve semptomları - Marx teorisine Lacan'cı bakış" },
+        ],
+      },
+      { baslik: "29 Mayıs 2027 Cumartesi", metin: "", tur: "Yüz yüze",
+        konular: [
+          "10.00-12.30: Tragedyalar: Kahraman-Kurban Ruhsallığı / Semih Çelenk",
+          "13.30-16.00: Psikomitoloji Atölyesi / M. Bilgin Saydam",
+          "16.30-19.00: Sınıf Deneyimlerinin Ruhsal Dinamikleri Atölyesi / Hakan Koçak",
+        ],
+      },
+      { baslik: "30 Mayıs 2027 Pazar", metin: "", tur: "Yüz yüze",
+        konular: [
+          "11.00-12.30: Toplumsal Cinsiyet ve Dil / Nehir Durna",
+          "12.30-14.00: Toplumsal Cinsiyet ve Uygarlığın Huzursuzluğu / Cemal Dindar",
+          "15.00-18.00: Toplumsal Cinsiyet Atölyesi / Nehir Durna - Cemal Dindar",
         ],
       },
     ],
@@ -627,6 +622,8 @@ const KursDetay = () => {
                                 <span className="h-1.5 w-1.5 rounded-full bg-amber flex-shrink-0" />
                                 {konu}
                               </li>
+                            ) : "aciklama" in konu ? (
+                              <li key={j} className="pl-1 italic text-[15px]">{konu.aciklama}</li>
                             ) : (
                               <li key={j} className="!mt-10 space-y-2">
                                 <p className="text-[16px] font-bold uppercase tracking-[0.2em] text-navy-500">{konu.grup.split('\n')[0]}</p>{konu.grup.includes('\n') && <p className="-mt-1 text-[16px] text-muted-foreground">{konu.grup.split('\n')[1]}</p>}
