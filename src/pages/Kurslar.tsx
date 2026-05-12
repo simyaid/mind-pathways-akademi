@@ -25,7 +25,7 @@ const steps = [
   },
   {
     n: "3. Yıl",
-    title: "",
+    title: "Psikodiyalektik Araştırmalar",
     slug: "3-yil",
     text: "Psikodiyalektik formasyonun derinleştiği ve katılımcının kendi çalışma biçimini kurmaya başladığı ileri bir aşamayı temsil eder.",
   },
@@ -54,7 +54,7 @@ const Formation = () => (
         Olgu ve süpervizyon çalışmaları<br />
         Psikodiyalektik kültür çalışmaları yapılır.</p>
         <div className="border border-border rounded-lg p-6 bg-surface text-sm">
-          En az bir yıl psikodiyalektik çalışmacı olarak Psikodiyalektik çalışma süreci yürüten aday, özgün bir metin yazımı ve bir psikodiyalektik kültür çalışması yaptıktan sonra Psikodiyalektik Çalışmacı ünvanı alır ve belgesi Akademi Psikodiyalektik değerlendirmesi sonrası Halk İçin Psikoterapi Derneği ile ortak düzenlenir.
+          En az bir yıl psikodiyalektik çalışmacı olarak psikodiyalektik çalışma süreci yürüten aday, özgün bir metin yazımı ve bir psikodiyalektik kültür çalışması yaptıktan sonra Psikodiyalektik Çalışmacı ünvanı alır ve belgesi Akademi Psikodiyalektik değerlendirmesi sonrası Halk İçin Psikoterapi Derneği ile ortak düzenlenir.
         </div>
         <div className="border border-border rounded-lg p-6 bg-surface text-sm">
           Adaylar, formasyonun ikinci yılı ile birlikte HALK İÇİN PSİKOTERAPİ DERNEĞİ'ne üye olurlar ve Halk İçin Psikoterapi Derneği tüzüğünün üyeler için belirlediği sorumluluğu yerine getirmekle yükümlüdürler.
