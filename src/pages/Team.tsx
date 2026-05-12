@@ -19,6 +19,7 @@ import semihCelenkPhoto from "@/assets/Kadro/SemihCelenk.png";
 import timucinOralPhoto from "@/assets/Kadro/TimuçinOral.png";
 import yunusEmreAydinPhoto from "@/assets/Kadro/YunusEmreAydin.png";
 import zehraEryorukPhoto from "@/assets/Kadro/ZehraEryoruk.png";
+import berilBayrakPhoto from "@/assets/Kadro/Beril.jpeg";
 
 export const team = [
   {
@@ -201,6 +202,7 @@ export const team = [
     name: "Beril Bayrak",
     role: "Bebek Ruh Sağlığı / Pediatri",
     initials: "BB",
+    photo: berilBayrakPhoto,
     bio: "Yirmi yılı aşkın süredir genel pediatrist olarak Amerika ve Türkiye'de görev almıştır. Bebek ruh sağlığı ve ebeveyn-çocuk ilişkileri alanında uzmanlaşmış olup Massachusetts Bebek Ruh Sağlığı Derneği'nden Bebek Ruh Sağlığı Uzmanı ve Klinik Mentoru belgesi almıştır.",
     long: "Dr. Beril Bayrak 1995 yılında Cerrahpaşa Tıp Fakültesi'nden mezun olduktan sonra ABD'de NY Long Island College Hospital/Beth Israel programında pediatri ihtisası yapmış ve yirmi yılı aşkın bir süredir genel pediatrist olarak Amerika ve Türkiye'de görev almıştır. Uzun yıllar süren çocuklar ve ailelerle olan etkileşimleri sırasında, tıbbi modelin önleyici ruh sağlığı ve bütüncül sağlık konularına yeterince odaklanmadığını fark etti. 2010'da yenidoğan davranış gözlemi ve 2016'da Bebek Ruh Sağlığı sertifika eğitimi alarak, bebek ruh sağlığı ve ebeveyn-çocuk ilişkileri alanında uzmanlaşmıştır.",
     longExtra: "Dr. Bayrak, Massachusetts Bebek Ruh Sağlığı Derneği'nden Bebek Ruh Sağlığı Uzmanı ve Klinik Mentoru olarak yetkinlik belgesi almış, ayrıca Amerikan Pediatri Akademisi'nin bebek ruh sağlığı çalışma grubunun yürütücülerinden ve henüz yazımı devam eden Amerikan Pediatri Akademisi Bebek Ruh Sağlığı Bildirgesinin yazarlarından biridir. Türkiye, Amerika ve uluslararası platformlarda bu alanda sunumlar, atölyeler ve reflektif süpervizyonlar vermektedir. Başlangıç Derneği aracılığıyla çocuk koruma evlerinde ergen anne ve bebeklerle çalışmış olup, 2023 yılında kurulan Zeru Derneği'nin kurucularındandır. Dernek, ebeveyn-çocuk ilişkileri ve kadın hakları konularında 'sağlıklı bir toplumun tohumu' hedefini gütmekte, ayrıca Gaziantep ve UC Davis üniversiteleri ile ekolojik deprem sonrası toplumsal dayanıklılık üzerine projeler yürütmektedir. En önemli amaçlarından biri pediatri ve tıbbi modele önleyici ruh sağlığı ve ilişki odaklı bütüncül bir model olarak bebek ruh sağlığını entegre etmek, aynı zamanda da bebek ruh sağlığı alanına Pediatri perspektifini ilave etmektir.",
