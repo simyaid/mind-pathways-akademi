@@ -54,7 +54,7 @@ const Formation = () => (
           <li className="flex items-start gap-3"><span className="h-0.5 w-4 bg-amber flex-shrink-0 mt-3" />Yapılacak görüşme sonrasında Psikodiyalektik Formasyon'a kabul almış olmak.</li>
         </ul>
         <p>Psikodiyalektik Formasyon Programının birinci yılı; psikodiyalektik teori ve pratik ile ilgili dersleri ve uygulamaları içerir. İkinci yılı kuramsal ve pratik deneyimi yetkinleştirilmeye yöneliktir.</p>
-        <p>Formasyondaki adaylar, formasyonun ikinci yıl ile birlikte formasyonda <strong>Psikodiyalektik Çalışmacı</strong> olarak adlandırılırlar ve psikodiyalektik çalışma için başvuruları kabul ederler.<br />Bu süreçte;<br />
+        <p>Formasyondaki adaylar, formasyonun ikinci yıl ile birlikte <strong>Formasyonda Psikodiyalektik Çalışmacı</strong> olarak adlandırılırlar ve psikodiyalektik çalışma için başvuruları kabul ederler.<br />Bu süreçte;<br />
         İleri teorik çalışmalar,<br />
         Psikodiyalektik çalışma temrinleri<br />
         Olgu ve süpervizyon çalışmaları<br />
