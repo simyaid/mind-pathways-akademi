@@ -476,9 +476,6 @@ const kurslar: Record<string, Kurs> = {
           "Utancın Ruhsal Güzergahları (Amati Sas'ın Utanç ve Travma Kuramı Üzerine)",
         ],
       },
-      { baslik: "Psikodiyalektik Kültür İncelemeleri Kursu", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında ayda iki çalışma biçiminde olacak. Çalışmanın süresi 110 dakika…", egitmen: "Emine Ayhan", tur: "Hibrit",
-        konular: ["Shakespeare"],
-      },
       { baslik: "Dersler" },
       { baslik: <>Shakespeare ve Psikodiyalektik:<br />Zaman, Mekan, Diyalektik Dönüşüm</>, metin: "Ekim 2026 - Mayıs 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Emine Ayhan", tur: "Hibrit" },
       { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "Ekim 2026 - Ocak 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Fatih Artvinli", tur: "Hibrit" },
@@ -488,7 +485,7 @@ const kurslar: Record<string, Kurs> = {
       { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     sure: "Eylül 2026 – Mayıs 2027",
-    kimler: "2. Yılı tamamlamış ve psikodiyalektik çalışmada belirli bir olgunluk kazanmış katılımcılar için tasarlanmıştır.",
+    kimler: "",
     alinti: "\"İleri gitmek; daha fazla bilmek değil, daha derinden anlamaktır.\"",
   },
   "4-modul": {

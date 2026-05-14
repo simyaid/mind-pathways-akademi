@@ -16,7 +16,7 @@ const navItems = [
       { to: "/kurslar-listesi", label: "Kurslar" },
       { to: "/dersler", label: "Dersler" },
       { group: "Programlar" },
-      { to: "/kurslar/hazirlik", label: "Formasyon Hazırlık" },
+      { to: "/kurslar/hazirlik", label: "Formasyona Hazırlık" },
       { to: "/kurslar/1-yil", label: "1. Yıl — Psikodiyalektik Teori ve Pratik" },
       { to: "/kurslar/2-yil", label: "2. Yıl — Psikodiyalektik Çalışma" },
       { to: "/kurslar/3-yil", label: "3. Yıl — Psikodiyalektik Araştırmalar" },
