@@ -57,7 +57,7 @@ export const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className={`absolute inset-0 w-full h-full object-cover ${current === heroImages.length - 1 ? "object-center" : "object-bottom"}`}
+          className={`absolute inset-0 w-full h-full object-cover ${[5, 7].includes(current) ? "object-top" : current === heroImages.length - 1 ? "object-center" : "object-bottom"}`}
         />
       </AnimatePresence>
 
