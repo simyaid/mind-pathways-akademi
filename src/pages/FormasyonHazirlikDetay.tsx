@@ -56,7 +56,7 @@ const kurslar: Record<string, Kurs> = {
 
       { baslik: "25 Eylül 2026 - 21 Mayıs 2027", metin: "" },
 
-      { baslik: "Psikodiyalektik Düşüncenin Kaynakları", metin: "25 Eylül 2026 - 27 Kasım 2026 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
+      { baslik: "Psikodiyalektik", metin: "25 Eylül 2026 - 27 Kasım 2026 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
         konular: [
           { grup: "Ruhsallık bilgisi paradigmalarına toplu bakış", maddeler: ["Hipnoid paradigmalar", "Özgürleştirici paradigmalar"] },
           { grup: "Diyalektik ve temel kavramlar", maddeler: ["Varlık", "Oluş", "Kavram", "Üç boyutluluk - dört boyutluluk"] },
@@ -64,7 +64,7 @@ const kurslar: Record<string, Kurs> = {
           { grup: "Diyalektik düşünme temrinleri", maddeler: ["Tekinsizlik'ten ruhsal üçgenleşmeye: prehistorya ve yasa", "Oidipus bütünlüğü", "Birey ruhsallığı - Toplum ruhsallığı", "Kastrasyon ve uygarlık"] },
         ],
       },
-      { baslik: "Anadolu Ruhsallığı", metin: "25 Eylül 2026 - 27 Kasım 2026 tarihleri arasında Cuma günleri saat 10.30-12.00 arasında yapılacaktır. 'Psikodiyalektik Düşüncenin Kaynakları' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
+      { baslik: "Anadolu Ruhsallığı", metin: "22 Eylül 2026 - 25 Mayıs 2027 tarihleri arasında Salı günleri saat 20.30-22.00 arasında yapılacaktır. 'Psikodiyalektik Düşüncenin Kaynakları' ile dönüşümlü gerçekleştirilecektir.", egitmen: "Cemal Dindar", tur: "Hibrit",
         konular: [
           { grup: "Kuramsal temeller", maddeler: ["Avcı ve derleyiciler", "Çoban ve çiftçi", "Mezopotamya ve bozkır göçebe birikimi", "Medine ve çöl: İbni Haldun'un Mukaddime'si"] },
           { grup: "Temel karşıtlıklar ve birliği", maddeler: ["Anacıllık ve ataerkillik", "Kan bağı ve yer bağı", "Göçebe ve yerleşik", "Acı (ve) dirlik", "Şaman ve rahip kişilikleri"] },
@@ -317,9 +317,9 @@ const kurslar: Record<string, Kurs> = {
     alinti: "\"Düşünmek bir eylemdir; ama düşünmeyi öğrenmek bir ömür sürer.\"",
     dersler: [
       {
-        baslik: "Psikodiyalektik Düşünce",
+        baslik: "Psikodiyalektik",
         egitmen: "Cemal Dindar",
-        tarih: "24 Eylül - 13 Mayıs tarihleri arasında Perşembe günleri 10:30 - 12:00 saatlerinde \"Yavaş Okuma Çalışması\" ile dönüşümlü gerçekleşecektir.",
+        tarih: "22 Eylül 2026 - 25 Mayıs 2027 tarihleri arasında Salı günleri saat 20.30-22.00 arasında yapılacaktır. 'Anadolu Ruhsallığı' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
         konular: [
           "Ruhsallık ve İnsanın Tarihi",
@@ -336,9 +336,20 @@ const kurslar: Record<string, Kurs> = {
         ],
       },
       {
+        baslik: "Anadolu Ruhsallığı",
+        egitmen: "Cemal Dindar",
+        tarih: "22 Eylül 2026 - 25 Mayıs 2027 tarihleri arasında Salı günleri saat 20.30-22.00 arasında yapılacaktır. 'Psikodiyalektik Düşüncenin Kaynakları' ile dönüşümlü gerçekleştirilecektir.",
+        tur: "Hibrit",
+        konular: [
+          { grup: "Kuramsal temeller", maddeler: ["Avcı ve derleyiciler", "Çoban ve çiftçi", "Mezopotamya ve bozkır göçebe birikimi", "Medine ve çöl: İbni Haldun'un Mukaddime'si"] },
+          { grup: "Temel karşıtlıklar ve birliği", maddeler: ["Anacıllık ve ataerkillik", "Kan bağı ve yer bağı", "Göçebe ve yerleşik", "Acı (ve) dirlik", "Şaman ve rahip kişilikleri"] },
+          { grup: "Kuramsal sonuçlar", maddeler: ["Emek ve oluş: evcilleştirme süreçleri", "Göbeklitepe - Çatalhöyük - Troya: insan ruhsallığının sabitlik ve süreklilikleri", "Birincil süreçler ve üçgenleşme"] },
+        ],
+      },
+      {
         baslik: "Yavaş Okuma Çalışması",
         egitmen: "Cemal Dindar",
-        tarih: "24 Eylül 2026 - 13 Mayıs 2027 tarihleri arasında Perşembe günleri 10.30-12.00 saatlerinde 'Psikodiyalektik Düşünceye Giriş Dersleri' ile dönüşümlü gerçekleştirilecektir.",
+        tarih: "24 Eylül 2026 - 13 Mayıs 2027 tarihleri arasında Perşembe günleri 10.30-12.00 saatlerinde 'Diyalektik Metin Çalışmaları I' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
         konular: [
           "Tekinsizlik (1919), S. Freud",
@@ -404,12 +415,12 @@ const kurslar: Record<string, Kurs> = {
       {
         baslik: "Yavaş Okuma Çalışması: Klein Metinleri",
         egitmen: "Cemal Dindar",
-        tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri saat 10.30-12.00 arasında hibrit yapılacaktır. 'Diyalektik Metin Çalışmaları' ile dönüşümlü gerçekleştirilecektir.",
+        tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri saat 10.30-12.00 arasında hibrit yapılacaktır. 'Diyalektik Metin Çalışmaları II' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
         konular: ["Melanie Klein Okumaları"],
       },
       {
-        baslik: "Diyalektik Metin Çalışmaları",
+        baslik: "Diyalektik Metin Çalışmaları II",
         egitmen: "Cemal Dindar",
         tarih: "21 Eylül 2026 - 10 Mayıs 2027 arasında iki haftada bir Pazartesi günleri 10.30-12.00 arasında hibrit yapılacaktır. 'Klein Metinleri' ile dönüşümlü gerçekleştirilecektir.",
         tur: "Hibrit",
@@ -480,8 +491,8 @@ const kurslar: Record<string, Kurs> = {
       { baslik: <>Shakespeare ve Psikodiyalektik:<br />Zaman, Mekan, Diyalektik Dönüşüm</>, metin: "Ekim 2026 - Mayıs 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Emine Ayhan", tur: "Hibrit" },
       { baslik: <>Türkçenin Ruh Hali:<br />Edebiyat Aynasında Ruhsallık</>, metin: "Ekim 2026 - Ocak 2027 arasında iki haftada bir Perşembe günleri saat 13.00-14.50 arasında hibrit yapılacaktır.", egitmen: "Fatih Artvinli", tur: "Hibrit" },
       { baslik: "Tamamlayıcı Çalışmalar", not: "(Akademi Psikodiyalektik formasyon programı için tamamlayıcı çalışmalara katılım zorunlu değildir.)" },
-      { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
-      { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "8 Eylül 2026 - 29 Haziran 2027 tarihleri arasında Salı günleri 10.30-12.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Okur-Yazarlığı", metin: "7 Eylül 2026 - 28 Haziran 2027 tarihleri arasında Pazartesi günleri 12.30-14.30 saatlerinde 'Psikodiyalektik Kavram Çalışmaları' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
+      { baslik: "Psikodiyalektik Kavram Çalışmaları", metin: "7 Eylül 2026 - 28 Haziran 2027 tarihleri arasında Pazartesi günleri 12.30-14.30 saatlerinde 'Psikodiyalektik Okur-Yazarlığı' ile dönüşümlü yapılacaktır.", egitmen: "Cemal Dindar", tur: "Hibrit" },
       { baslik: "Psikodiyalektik Kültür Çalışmaları", metin: "Ekim 2026 - Mayıs 2027 tarihleri arasında (Ocak ayı hariç) ayda bir çalışma biçiminde olacak.", tur: "Hibrit" },
     ],
     sure: "Eylül 2026 – Mayıs 2027",

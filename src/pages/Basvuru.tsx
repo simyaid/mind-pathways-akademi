@@ -100,6 +100,7 @@ const Basvuru = () => {
                 <div className="space-y-1">
                   <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500">Program Ücreti</p>
                   <p className="font-display text-2xl font-semibold text-navy-deep">45.000 ₺ - 55.000 ₺ <span className="text-base font-normal text-muted-foreground">+ KDV</span></p>
+                  <p className="text-sm text-muted-foreground">(Bu aralıkta kişinin kendi koşullarına göre belirlemesi beklenmektedir.)</p>
                 </div>
                 <div className="space-y-1">
                   <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy-500">İletişim</p>
