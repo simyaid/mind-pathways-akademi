@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import akademiLogo from "@/assets/AkademiLogo.png";
 import halkicinpsikoterapilogow from "@/assets/halkicinpsikoterapilogow.png";
+import xLogo from "@/assets/x-logo.webp";
+import instagramIcon from "@/assets/Instagram_icon.png";
 
 export const Footer = () => (
   <footer className="mt-32 border-t border-border bg-surface">
@@ -22,6 +24,14 @@ export const Footer = () => (
             <li>+90 (544) 809 79 09</li>
             <li>Halaskargazi Caddesi Kutlu Apt. 182/6 Şişli/İstanbul</li>
           </ul>
+          <div className="flex items-center justify-end gap-4 mt-5">
+            <a href="https://www.instagram.com/akademipsikodiyalektik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src={instagramIcon} alt="Instagram" className="h-6 w-6 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            </a>
+            <a href="https://x.com/psychodialectic" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src={xLogo} alt="X" className="h-6 w-6 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
