@@ -1,26 +1,31 @@
 import { motion } from "framer-motion";
 import { Users, Scale, Sprout, Megaphone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const values = [
   {
     icon: Users,
     title: ["Formasyona", "Hazırlık"],
     text: "Ruhsallık bilgileri, insan bilimleri ve diyalektik düşüncenin temel kuramlarını içeren dersler.",
+    href: "/kurslar/hazirlik",
   },
   {
     icon: Scale,
     title: ["Teori ve", "Pratik"],
     text: "Psikodiyalektik düşüncenin temel kavramları ve psikodiyalektik çalışmanın ilkeleri.",
+    href: "/kurslar/1-yil",
   },
   {
     icon: Sprout,
     title: ["Psikodiyalektik", "Çalışma"],
     text: "Psikodiyalektik çalışmacı olmak ve psikokültür uygulamaları.",
+    href: "/kurslar/2-yil",
   },
   {
     icon: Megaphone,
     title: "Psikodiyalektik Araştırmalar",
     text: "İleri psikodiyalektik araştırma ve incelemeleri.",
+    href: "/kurslar/3-yil",
   },
 ];
 
@@ -33,8 +38,8 @@ export const ValuesSection = () => (
 
       <div className="grid gap-px bg-border rounded-lg overflow-hidden md:grid-cols-2 lg:grid-cols-4 shadow-soft">
         {values.map((v, i) => (
+          <Link key={Array.isArray(v.title) ? v.title.join("-") : v.title} to={v.href} className="block h-full">
           <motion.div
-            key={Array.isArray(v.title) ? v.title.join("-") : v.title}
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -62,6 +67,7 @@ export const ValuesSection = () => (
             </p>
 
           </motion.div>
+          </Link>
         ))}
       </div>
     </div>
