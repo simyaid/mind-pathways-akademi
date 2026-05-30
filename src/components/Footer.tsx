@@ -25,13 +25,13 @@ export const Footer = () => (
             <li>Halaskargazi Caddesi Kutlu Apt. 182/6 Şişli/İstanbul</li>
           </ul>
           <div className="flex flex-col items-end gap-3 mt-5">
-            <a href="https://www.instagram.com/akademipsikodiyalektik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+            <a href="https://www.instagram.com/akademipsikodiyalektik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <img src={instagramIcon} alt="Instagram" className="h-6 w-6 object-contain" />
-              <span className="text-xs text-muted-foreground">@akademipsikodiyalektik</span>
+              <span className="text-sm text-sky-400">@akademipsikodiyalektik</span>
             </a>
-            <a href="https://x.com/psychodialectic" target="_blank" rel="noopener noreferrer" aria-label="X" className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+            <a href="https://x.com/psychodialectic" target="_blank" rel="noopener noreferrer" aria-label="X" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <img src={xLogo} alt="X" className="h-9 w-9 object-contain" />
-              <span className="text-xs text-muted-foreground">@psychodialectic</span>
+              <span className="text-sm text-sky-400">@psychodialectic</span>
             </a>
           </div>
         </div>
