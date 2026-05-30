@@ -29,7 +29,7 @@ export const Footer = () => (
               <img src={instagramIcon} alt="Instagram" className="h-6 w-6 object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </a>
             <a href="https://x.com/psychodialectic" target="_blank" rel="noopener noreferrer" aria-label="X">
-              <img src={xLogo} alt="X" className="h-6 w-6 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <img src={xLogo} alt="X" className="h-9 w-9 object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </a>
           </div>
         </div>
