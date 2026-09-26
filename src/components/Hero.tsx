@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -85,11 +85,6 @@ export const Hero = () => {
           </blockquote>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Button asChild variant="amber" size="lg">
-              <Link to="/basvuru">
-                Başvur <ArrowRight className="ml-1" />
-              </Link>
-            </Button>
             <Button asChild size="lg" className="border-white/40 text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm">
               <Link to="/hakkimizda">
                 <BookOpen /> Hakkımızda
